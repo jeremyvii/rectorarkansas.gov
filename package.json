@@ -1,0 +1,12 @@
+{
+  "name": "rectorarkansas.com",
+  "version": "1.0.0",
+  "author": "jeremyvii",
+  "description": "The Official Website for Rector, Arkansas",
+  "dependencies": {
+    "@uswds/uswds": "3.11.0"
+  },
+  "devDependencies": {
+    "@uswds/compile": "^1.2.1"
+  }
+}
