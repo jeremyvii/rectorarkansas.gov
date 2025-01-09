@@ -13,3 +13,33 @@ in the form $setting: value,
 //    $setting: value
 //  );
 //
+
+@use "uswds-core" with (
+  // Primary Colors
+  $theme-color-primary: #0c259c,              // Base primary
+  $theme-color-primary-light: #2e4db8,       // Lighter by ~25%
+  $theme-color-primary-lighter: #596ccf,     // Lighter by ~50%
+  $theme-color-primary-dark: #1a2236,        // Darkened by ~50%
+  $theme-color-primary-darker: #243241,      // Darkened by ~25%
+
+  // Secondary Colors (Red)
+  $theme-color-secondary: #c02c38,           // Base secondary (red)
+  $theme-color-secondary-light: #e57373,     // Lighter by ~25%
+  $theme-color-secondary-lighter: #f8b9b9,   // Lighter by ~50%
+  $theme-color-secondary-dark: #8f202b,      // Darkened by ~25%
+  $theme-color-secondary-darker: #5e151d,    // Darkened by ~50%
+
+  // Accent Cool Colors (Teal)
+  $theme-color-accent-cool: #008080,         // Base accent cool (teal)
+  $theme-color-accent-cool-light: #40bfbf,   // Lighter by ~25%
+  $theme-color-accent-cool-lighter: #99e5e5, // Lighter by ~50%
+  $theme-color-accent-cool-dark: #006666,    // Darkened by ~25%
+  $theme-color-accent-cool-darker: #004c4c,  // Darkened by ~50%
+
+  // Accent Warm Colors (Orange)
+  $theme-color-accent-warm: #d97700,         // Base accent warm (orange)
+  $theme-color-accent-warm-light: #f0a63a,   // Lighter by ~25%
+  $theme-color-accent-warm-lighter: #fbd4a2, // Lighter by ~50%
+  $theme-color-accent-warm-dark: #b96000,    // Darkened by ~25%
+  $theme-color-accent-warm-darker: #8c4800   // Darkened by ~50%
+);
