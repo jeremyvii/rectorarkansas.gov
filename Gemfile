@@ -3,3 +3,4 @@
 source "https://rubygems.org"
 
 gem "jekyll"
+gem "ffi", "~> 1.17.1"
