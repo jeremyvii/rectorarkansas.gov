@@ -1,0 +1,90 @@
+---
+layout: default
+title: Contact
+description: Contact the City of Rector, Arkansas
+
+city_contacts:
+  - name: City Hall
+    address: 409 S. Stewart
+    city: Rector
+    state: AR
+    zip: 72461
+    phone: (870) 595-3035
+  - name: Fire Department
+    address: Hwy 49<br>124 W 9th St
+    city: Rector
+    state: AR
+    zip: 72461
+    phone: (870) 595-3035
+  - name: Rector Community Museum
+    address: 121 W 4th St
+    city: Rector
+    state: AR
+    zip: 72461
+    phone: (870) 595-2570
+  - name: Rector Ambulance Service
+    address: Hwy 49
+    city: Rector
+    state: AR
+    zip: 72461
+    phone: (870) 595-3419
+  - name: Water Department
+    address: 409 S. Stewart
+    city: Rector
+    state: AR
+    zip: 72461
+    phone: (870) 595-3035
+  - name: Planning and Zoning
+    address: 409 S. Stewart
+    city: Rector
+    state: AR
+    zip: 72461
+    phone: (870) 595-3035
+  - name: Police Department
+    address: 409 S. Stewart
+    city: Rector
+    state: AR
+    zip: 72461
+    phone: (870) 595-2423
+  - name: Community Center
+    address: 740 E 9th St
+    city: Rector
+    state: AR
+    zip: 72461
+    phone: (870) 595-2188
+---
+
+<section class="usa-section bg-primary-darker">
+  <div class="grid-container">
+    <h1 class="text-white">Contact</h1>
+    <p class="usa-intro text-white">
+      If you have questions or comments pertaining to a specific department,
+      please select the appropriate contact from the list below. If you are
+      unsure where to direct your question, send it to city hall and they will
+      route it to the appropriate person. Please keep in mind that email
+      responses may not be immediate. If you are inquiring about something that
+      needs immediate attention, please call. City Hall may be reached by email
+      at <a class="text-white" href="mailto:water@rectorarkansas.com">water@rectorarkansas.com</a>.
+    </p>
+  </div>
+</section>
+<section class="grid-container usa-section">
+  <h2>City Contacts</h2>
+  <ul class="usa-card-group">
+    {% for contact in page.city_contacts %}
+      <li class="usa-card tablet:grid-col-6">
+        <div class="usa-card__container">
+          <div class="usa-card__header">
+            <h3 class="usa-card__heading">{{ contact.name }}</h3>
+          </div>
+          <div class="usa-card__body">
+            <address>
+              <p>{{ contact.address }}<br>{{ contact.city }}, {{ contact.state }} {{ contact.zip }}</p>
+              <p class="margin-0"><a href="tel:{{ contact.phone }}">{{ contact.phone }}</a></p>
+            </address>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
