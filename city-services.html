@@ -3,6 +3,76 @@ layout: default
 title: City Services
 description: Learn about services offered by the city and third party providers.
 permalink: /city-services/
+
+third_party_service_providers:
+  - name: Brightspeed
+    description: Brightspeed provides fiber internet services.
+    website: https://www.bright.net/
+    phone:
+      -
+        text: Brightspeed's phone number
+        phone: 8836927773
+  - name: Clay County Connect
+    description: Clay County Connect provides fiber internet services.
+    website: https://claycountyconnect.com/
+    phone:
+      -
+        text: Clay County Connect's phone number
+        phone: 8702021990
+  - name: Sparklight
+    description: Sparklight provides cable, internet and phone services. Part of the CableOne family of brands.
+    website: https://www.sparklight.com/
+    phone:
+      -
+        text: Sparklight's phone number
+        phone: 8557408966
+  - name: Exede Satellite Internet Services
+    description: Exede provides satellite internet services.
+    website: https://www.exede.com/
+  - name: Hughesnet Satellite Internet Services
+    description: HughesNet provides satellite internet services.
+    website: https://www.hughesnet.com/
+  - name: Entergy Arkansas
+    description: Entergy Arkansas provides electricity services.
+    website: https://www.entergy-arkansas.com/
+    phone:
+      -
+        text: Entergy Arkansas customer service/emergency phone number
+        phone: 18003683749
+      -
+        text: Entergy Arkansas power outage phone number
+        phone: 18009688243
+      -
+        text: Entergy Arkansas Walnut Ridge phone number
+        phone: 18708863521
+  - name: Black Hills Energy
+    description: Black Hills Energy provides natural gas services.
+    website: https://www.blackhillsenergy.com/
+    phone:
+      -
+        text: Black Hills Energy customer service/emergency phone number
+        phone: 8888905554
+  - name: Shelton Sanitation
+    description: Shelton Sanitation provides sanitation services.
+    website: https://www.sheltonsanitation.com/
+    phone:
+      -
+        text: Shelton Sanitation's phone number
+        phone: 8702394000
+  - name: ADT Security Services
+    description: ADT provides security services.
+    website: https://www.adt.com/
+    phone:
+      -
+        text: ADT's phone number
+        phone: 8005211734
+  - name: Vivint Security Services
+    description: Vivint provides residential security services.
+    website: https://www.vivint.com/
+    phone:
+      -
+        text: Vivint's local retailer phone number
+        phone: 8552903685
 ---
 <section class="usa-section bg-primary">
   <div class="grid-container">
@@ -84,6 +154,40 @@ permalink: /city-services/
 <section class="usa-section bg-base-lightest">
   <div class="grid-container">
     <h2>Third Party Service Providers</h2>
-    <p>TODO</p>
+    <ul class="usa-card-group">
+      {% for provider in page.third_party_service_providers %}
+        <li class="usa-card tablet:grid-col-6">
+          <div class="usa-card__container">
+            <div class="usa-card__header">
+              <h3 class="usa-card__heading">{{ provider.name }}</h3>
+            </div>
+            <div class="usa-card__body">
+              <p class="margin-bottom-0">{{ provider.description }}</p>
+              {% if provider.phone %}
+                {% if provider.phone.size == 1 %}
+                  <p>
+                    <a class="usa-button width-full" href="tel:{{ provider.phone[0].phone }}">{{ provider.phone[0].text }}</a>
+                  </p>
+                {% else %}
+                  <ul class="usa-list usa-list--unstyled">
+                    {# @TODO: Find cleaner presentation #}
+                    {% for phone in provider.phone %}
+                      <li>
+                        <a class="usa-button width-full margin-top-2" href="tel:{{ phone.phone }}">{{ phone.text }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              {% endif %}
+              {% if provider.website %}
+                <p>
+                  <a class="usa-button width-full" href="{{ provider.website }}" target="_blank">{{ provider.name }}'s website</a>
+                </p>
+              {% endif %}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
