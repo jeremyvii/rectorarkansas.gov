@@ -21,3 +21,11 @@ i.e.
 */
 
 @use "uswds-core" as *;
+
+.homepage-card a {
+   text-decoration: none;
+}
+
+.homepage-card:hover .usa-card__container {
+   background-color: color("accent-cool-lighter");
+}
