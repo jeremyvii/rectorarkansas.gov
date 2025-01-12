@@ -11,7 +11,7 @@ city_contacts:
     zip: 72461
     phone: (870) 595-3035
   - name: Fire Department
-    address: Hwy 49<br>124 W 9th St
+    address: 124 W 9th St
     city: Rector
     state: AR
     zip: 72461
@@ -80,7 +80,7 @@ city_contacts:
           <div class="usa-card__body">
             <address>
               <p>{{ contact.address }}<br>{{ contact.city }}, {{ contact.state }} {{ contact.zip }}</p>
-              <p class="margin-0"><a href="tel:{{ contact.phone }}">{{ contact.phone }}</a></p>
+              <p class="margin-0"><a class="usa-link" href="tel:{{ contact.phone }}">{{ contact.phone }}</a></p>
             </address>
           </div>
         </div>
