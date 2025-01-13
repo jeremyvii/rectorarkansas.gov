@@ -24,8 +24,15 @@ i.e.
 
 .homepage-card a {
    text-decoration: none;
+   @include u-radius($theme-card-border-radius);
+}
+
+.homepage-card a:focus {
+   outline-color: color("white");
+   outline-offset: 0.25rem;
 }
 
 .homepage-card:hover .usa-card__container {
-   background-color: color("accent-cool-lighter");
+   color: color("white");
+   background-color: color("primary");
 }
