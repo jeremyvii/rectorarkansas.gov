@@ -10,22 +10,22 @@ third_party_service_providers:
     website: https://www.bright.net/
     phone:
       -
-        text: Brightspeed's phone number
-        phone: 8836927773
+        text: Phone number
+        phone: 1 (883) 692-7773
   - name: Clay County Connect
     description: Clay County Connect provides fiber internet services.
     website: https://claycountyconnect.com/
     phone:
       -
-        text: Clay County Connect's phone number
-        phone: 8702021990
+        text: Phone number
+        phone: 1 (870) 202-1990
   - name: Sparklight
     description: Sparklight provides cable, internet and phone services. Part of the CableOne family of brands.
     website: https://www.sparklight.com/
     phone:
       -
-        text: Sparklight's phone number
-        phone: 8557408966
+        text: Phone number
+        phone: 1 (855) 740-8966
   - name: Exede Satellite Internet Services
     description: Exede provides satellite internet services.
     website: https://www.exede.com/
@@ -37,42 +37,42 @@ third_party_service_providers:
     website: https://www.entergy-arkansas.com/
     phone:
       -
-        text: Entergy Arkansas customer service/emergency phone number
-        phone: 18003683749
+        text: Customer service/emergency phone number
+        phone: 1 (800) 368-3749
       -
-        text: Entergy Arkansas power outage phone number
-        phone: 18009688243
+        text: Power outage phone number
+        phone: 1 (800) 968-8243
       -
-        text: Entergy Arkansas Walnut Ridge phone number
-        phone: 18708863521
+        text: Walnut Ridge office's phone number
+        phone: 1 (870) 886-3521
   - name: Black Hills Energy
     description: Black Hills Energy provides natural gas services.
     website: https://www.blackhillsenergy.com/
     phone:
       -
-        text: Black Hills Energy customer service/emergency phone number
-        phone: 8888905554
+        text: Customer service/emergency phone number
+        phone: 1 (888) 890-5554
   - name: Shelton Sanitation
     description: Shelton Sanitation provides sanitation services.
     website: https://www.sheltonsanitation.com/
     phone:
       -
-        text: Shelton Sanitation's phone number
-        phone: 8702394000
+        text: Phone number
+        phone: 1 (870) 239-4000
   - name: ADT Security Services
     description: ADT provides security services.
     website: https://www.adt.com/
     phone:
       -
-        text: ADT's phone number
-        phone: 8005211734
+        text: Phone number
+        phone: 1 (800) 521-1734
   - name: Vivint Security Services
     description: Vivint provides residential security services.
     website: https://www.vivint.com/
     phone:
       -
-        text: Vivint's local retailer phone number
-        phone: 8552903685
+        text: Local retailer phone number
+        phone: 1 (855) 290-3685
 ---
 <section class="usa-section bg-primary">
   <div class="grid-container">
@@ -151,7 +151,7 @@ third_party_service_providers:
     <p><a href="tel:18702403035">(870) 240-3035</a></p>
   </address>
 </section>
-<section class="usa-section bg-base-lightest">
+<section class="usa-section bg-base-lightest padding-bottom-4">
   <div class="grid-container">
     <h2>Third Party Service Providers</h2>
     <ul class="usa-card-group">
@@ -161,26 +161,35 @@ third_party_service_providers:
             <div class="usa-card__header">
               <h3 class="usa-card__heading">{{ provider.name }}</h3>
             </div>
-            <div class="usa-card__body">
+            <div class="usa-card__body display-flex flex-column">
               <p class="margin-bottom-0">{{ provider.description }}</p>
               {% if provider.phone %}
                 {% if provider.phone.size == 1 %}
                   <p>
-                    <a class="usa-button width-full" href="tel:{{ provider.phone[0].phone }}">{{ provider.phone[0].text }}</a>
+                    <span class="text-bold">{{ provider.phone[0].text }}:</span><br>
+                    <a
+                      class="usa-link"
+                      href="tel:{{ provider.phone[0].phone|remove: '('|remove: ')'|remove: '-'|remove: ' ' }}"
+                    >{{ provider.phone[0].phone }}</a>
                   </p>
                 {% else %}
-                  <ul class="usa-list usa-list--unstyled">
-                    {# @TODO: Find cleaner presentation #}
+                  <ul class="usa-list usa-list--unstyled margin-bottom-2">
                     {% for phone in provider.phone %}
                       <li>
-                        <a class="usa-button width-full margin-top-2" href="tel:{{ phone.phone }}">{{ phone.text }}</a>
+                        <p>
+                          <span class="text-bold">{{ phone.text }}:</span><br>
+                          <a
+                            class="usa-link"
+                            href="tel:{{ phone.phone|remove: '('|remove: ')'|remove: '-'|remove: ' '  }}"
+                          >{{ phone.phone }}</a>
+                        </p>
                       </li>
                     {% endfor %}
                   </ul>
                 {% endif %}
               {% endif %}
               {% if provider.website %}
-                <p>
+                <p class="margin-top-auto">
                   <a class="usa-button width-full" href="{{ provider.website }}" target="_blank">{{ provider.name }}'s website</a>
                 </p>
               {% endif %}
