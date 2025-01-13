@@ -63,8 +63,8 @@ quick_links:
     <h2 class="site-preview-heading text-white">Quick Links</h2>
     <ul class="usa-card-group">
       {% for quick_link in page.quick_links %}
-        <li class="usa-card tablet:grid-col-6 desktop:grid-col-4 homepage-card height-full">
-          <a class="usa-card__container height-full" href="{{ quick_link.link }}">
+        <li class="usa-card tablet:grid-col-6 desktop:grid-col-4 homepage-card">
+          <a class="usa-card__container" href="{{ quick_link.link }}">
             <div class="usa-card__header">
               <h3 class="usa-card__heading">{{ quick_link.name }}</h3>
             </div>
