@@ -5,34 +5,43 @@ description: Official Community Website for the City of Rector, Arkansas
 
 quick_links:
   - name: City Government
-    description: Information about the city government.
+    icon: account_balance
     link: /city-government/
   - name: City Services
-    description: Learn about services offered by the city and third party providers.
+    icon: location_city
     link: /city-services/
   - name: Businesses
-    description: A list of businesses residing within the city of Rector.
+    icon: location_city
     link: javascript:void(0)
   - name: Frequently Asked Questions
-    description: Answers to common questions regarding the city.
+    icon: help
     link: javascript:void(0)
   - name: Community Center Reservations
-    description: Reserve the community center for your next event.
+    icon: event
     link: javascript:void(0)
   - name: RV Park Reservations
-    description: Reserve a spot at the Rector RV Park.
+    icon: event
     link: javascript:void(0)
-  - name: Business Licenses
-    description: Information on business licenses required by the city.
+  - name: Rural Fire Protection Enrollment Form
+    icon: file_download
     link: javascript:void(0)
-  - name: Occupation Licenses
-    description: Information on occupation licenses required by the city.
+  - name: Building Permit Application
+    icon: file_download
     link: javascript:void(0)
-  - name: Gas Inspections
-    description: Information on gas inspections required by the city.
+  - name: Golf Cart Permit Application
+    icon: file_download
+    link: javascript:void(0)
+  - name: Occupation License Application
+    icon: file_download
+    link: javascript:void(0)
+  - name: Chicken Permit Application
+    icon: file_download
+    link: javascript:void(0)
+  - name: Tile Permit Application
+    icon: file_download
     link: javascript:void(0)
 ---
-<section class="usa-hero" aria-label="Introduction">
+<section class="usa-hero">
   <div class="grid-container">
     <div class="usa-hero__callout">
       <h1 class="usa-hero__heading">
@@ -60,36 +69,34 @@ quick_links:
 </section>
 <section class="usa-section bg-primary">
   <div class="grid-container">
-    <h2 class="site-preview-heading text-white">Quick Links</h2>
+    <h2 class="font-heading-xl text-white">Quick Links</h2>
     <ul class="usa-card-group">
       {% for quick_link in page.quick_links %}
         <li class="usa-card tablet:grid-col-6 desktop:grid-col-4 homepage-card">
           <a class="usa-card__container" href="{{ quick_link.link }}">
-            <div class="usa-card__header">
-              <h3 class="usa-card__heading">{{ quick_link.name }}</h3>
+            <div class="usa-card__body margin-top-auto">
+              <div class="text-center">{% include icon.html icon=quick_link.icon size="usa-icon--size-8" %}</div>
+              <h3 class="usa-card__heading text-center">{{ quick_link.name }}</h3>
             </div>
-            <div class="usa-card__body margin-top-auto"><p>{{ quick_link.description }}</p></div>
           </a>
         </li>
       {% endfor %}
     </ul>
   </div>
 </section>
-<section id="test-section-id" class="usa-section">
-  <div class="grid-container">
-    <h2 class="font-heading-xl margin-y-0">The Rector Community Museum</h2>
-    <p class="usa-intro">
-      The Rector Community Museum is located at 310 Main St. Check out
-      their FaceBook page for current activities and announcements. If you
-      would like help support this look at history, you can mail your
-      donations to:<br>
-      <span class="text-base-dark">
-        Rector Community Museum,<br>
-        P.O. Box 313,<br>
-        Rector, AR 72461.
-      </span>
-    </p>
-    <a class="usa-button usa-button--big margin-bottom-1 tablet:margin-bottom-0" href="https://rectormuseum.com/" target="_blank">Visit the Museum's website</a>
-    <a class="usa-button usa-button--big" href="https://www.facebook.com/rectormuseum" target="_blank">Visit the Museum's Facebook Page</a>
-  </div>
+<section class="usa-section grid-container">
+  <h2 class="font-heading-xl margin-y-0">The Rector Community Museum</h2>
+  <p class="usa-intro">
+    The Rector Community Museum is located at 310 Main St. Check out
+    their FaceBook page for current activities and announcements. If you
+    would like help support this look at history, you can mail your
+    donations to:<br>
+    <span class="text-base-dark">
+      Rector Community Museum,<br>
+      P.O. Box 313,<br>
+      Rector, AR 72461.
+    </span>
+  </p>
+  <a class="usa-button usa-button--big margin-bottom-1 tablet:margin-bottom-0" href="https://rectormuseum.com/" target="_blank">Visit the Museum's website</a>
+  <a class="usa-button usa-button--big" href="https://www.facebook.com/rectormuseum" target="_blank">Visit the Museum's Facebook Page</a>
 </section>
