@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Rector Arkansas
+title: City of Rector Arkansas
 email: info@rectorarkansas.com
 description:
   Rector Arkansas is a small town in Northeast Arkansas. This site is dedicated to the history and people of Rector Arkansas.
