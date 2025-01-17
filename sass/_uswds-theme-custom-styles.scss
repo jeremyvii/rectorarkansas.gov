@@ -22,17 +22,21 @@ i.e.
 
 @use "uswds-core" as *;
 
+body {
+  font-size: size('body', $theme-body-font-size);
+}
+
 .homepage-card a {
-   text-decoration: none;
-   @include u-radius($theme-card-border-radius);
+  text-decoration: none;
+  @include u-radius($theme-card-border-radius);
 }
 
 .homepage-card a:focus {
-   outline-color: color("white");
-   outline-offset: 0.25rem;
+  outline-color: color("white");
+  outline-offset: 0.25rem;
 }
 
 .homepage-card:hover .usa-card__container {
-   color: color("white");
-   background-color: color("primary");
+  color: color("white");
+  background-color: color("primary");
 }
