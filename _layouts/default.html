@@ -30,136 +30,57 @@
           <img src="/assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
         </button>
         <ul class="usa-nav__primary usa-accordion">
-          <li class="usa-nav__primary-item">
-            <button
-              type="button"
-              class="usa-accordion__button usa-nav__link"
-              aria-expanded="false"
-              aria-controls="basic-mega-nav-section-one"
-            >
-              <span>Departments</span>
-            </button>
-            <div
-              id="basic-mega-nav-section-one"
-              class="usa-nav__submenu usa-megamenu"
-            >
-              <div class="grid-row grid-gap-4">
-                <div class="usa-col">
-                  <ul class="usa-nav__submenu-list">
-                    <li class="usa-nav__submenu-item">
-                      <a href="/city-government/">City Government</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="/city-services/">City Services</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="/rector-police-department/">Rector Police Department</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="/rector-municipal-airport/">Rector Municipal Airport</a>
-                    </li>
-                  </ul>
+          {% for menu_item in site.data.navigation %}
+            {% assign classes = 'usa-nav-link' %}
+
+            {% if page.url == menu_item.url %}
+              {% assign classes = classes|append: ' usa-current' %}
+            {% endif %}
+
+            {% if menu_item.submenu %}
+              {% assign classes = 'usa-accordion__button usa-nav__link' %}
+
+              {% for section in menu_item.submenu %}
+                {% for submenu_item in section %}
+                  {% if page.url == submenu_item.url %}
+                    {% assign classes = classes|append: ' usa-current' %}
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+              <li class="usa-nav__primary-item">
+                <button
+                  type="button"
+                  class="{{ classes }}"
+                  aria-expanded="false"
+                  aria-controls="mega-nav-section-{{ forloop.index }}"
+                >
+                  <span>{{ menu_item.title }}</span>
+                </button>
+                <div
+                  id="mega-nav-section-{{ forloop.index }}"
+                  class="usa-nav__submenu usa-megamenu"
+                >
+                  <div class="grid-row grid-gap-4">
+                    {% for section in menu_item.submenu %}
+                      <div class="usa-col">
+                        <ul class="usa-nav__submenu-list">
+                          {% for submenu_item in section %}
+                            <li class="usa-nav__submenu-item">
+                              <a href="{{ submenu_item.url }}">{{ submenu_item.title }}</a>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    {% endfor %}
+                  </div>
                 </div>
-                <div class="usa-col">
-                  <ul class="usa-nav__submenu-list">
-                    <li class="usa-nav__submenu-item">
-                      <a href="/fire-and-ambulance-rescue-department/">Fire and Ambulance Rescue Department</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Rector Community Center</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Rector Beautification Committee</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Woodland Heights Cemetery</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="usa-col">
-                  <ul class="usa-nav__submenu-list">
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Community Development</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Chamber of Commerce</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Planning and Zoning</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="usa-nav__primary-item">
-            <button
-              type="button"
-              class="usa-accordion__button usa-nav__link"
-              aria-expanded="false"
-              aria-controls="basic-mega-nav-section-two"
-            >
-              <span>Community</span>
-            </button>
-            <div
-              id="basic-mega-nav-section-two"
-              class="usa-nav__submenu usa-megamenu"
-            >
-              <div class="grid-row grid-gap-4">
-                <div class="usa-col">
-                  <ul class="usa-nav__submenu-list">
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">History</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Business</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Labor Day</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Museum</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="usa-col">
-                  <ul class="usa-nav__submenu-list">
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Churches</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Schools</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Public Library</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Health Care</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="usa-col">
-                  <ul class="usa-nav__submenu-list">
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">About Town</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Clay County Arts Council, Inc.</a>
-                    </li>
-                    <li class="usa-nav__submenu-item">
-                      <a href="javascript:void(0);">Garden Club</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="usa-nav__primary-item">
-            <a href="javascript:void(0);" class="usa-nav-link">Documents</a>
-          </li>
-          <li class="usa-nav__primary-item">
-            <a href="/contact/" class="usa-nav-link">Contact</a>
-          </li>
+              </li>
+            {% else %}
+              <li class="usa-nav__primary-item">
+                <a href="{{ menu_item.url }}" class="{{ classes }}">{{ menu_item.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </nav>
     </div>

@@ -1,0 +1,58 @@
+- title: Departments
+  submenu:
+    -
+      - title: City Government
+        url: /city-government
+      - title: City Services
+        url: /city-services
+      - title: Rector Police Department
+        url: /rector-police-department
+      - title: Rector Municipal Airport
+        url: /rector-municipal-airport
+    -
+      - title: Fire and Ambulance Rescue Department
+        url: /fire-and-ambulance-rescue-department
+      - title: Rector Community Center
+        url: javascript:void(0);
+      - title: Rector Beautification Committee
+        url: javascript:void(0);
+      - title: Woodland Heights Cemetery
+        url: javascript:void(0);
+    -
+      - title: Community Development
+        url: javascript:void(0);
+      - title: Chamber of Commerce
+        url: javascript:void(0);
+      - title: Planning and Zoning
+        url: javascript:void(0);
+- title: Community
+  submenu:
+    -
+      - title: History
+        url: javascript:void(0);
+      - title: Business
+        url: javascript:void(0);
+      - title: Labor Day
+        url: javascript:void(0);
+      - title: Museum
+        url: javascript:void(0);
+    -
+      - title: Churches
+        url: javascript:void(0);
+      - title: Schools
+        url: javascript:void(0);
+      - title: Public Library
+        url: javascript:void(0);
+      - title: Health Care
+        url: javascript:void(0);
+    -
+      - title: About Town
+        url: javascript:void(0);
+      - title: Clay County Arts Council, Inc.
+        url: javascript:void(0);
+      - title: Garden Club
+        url: javascript:void(0);
+- title: Documents
+  url: javascript:void(0);
+- title: Contact
+  url: /contact
