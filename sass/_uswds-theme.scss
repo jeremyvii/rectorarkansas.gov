@@ -44,4 +44,8 @@ in the form $setting: value,
   $theme-color-accent-warm-darker: #8c4800,   // Darkened by ~50%
 
   $theme-body-font-size: "lg",
+
+  $float-settings: (
+    responsive: true,
+  )
 );
