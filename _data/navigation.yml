@@ -54,5 +54,7 @@
         url: javascript:void(0);
 - title: Documents
   url: /documents
+- title: Frequently Asked Questions
+  url: /faq
 - title: Contact
   url: /contact

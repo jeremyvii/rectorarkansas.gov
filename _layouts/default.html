@@ -48,6 +48,7 @@
                   {% endif %}
                 {% endfor %}
               {% endfor %}
+
               <li class="usa-nav__primary-item">
                 <button
                   type="button"
@@ -66,8 +67,14 @@
                       <div class="usa-col">
                         <ul class="usa-nav__submenu-list">
                           {% for submenu_item in section %}
+                            {% assign submenu_classes = 'usa-nav-link' %}
+
+                            {% if page.url == submenu_item.url %}
+                              {% assign submenu_classes = submenu_classes|append: ' usa-current' %}
+                            {% endif %}
+
                             <li class="usa-nav__submenu-item">
-                              <a href="{{ submenu_item.url }}">{{ submenu_item.title }}</a>
+                              <a class="{{ submenu_classes }}" href="{{ submenu_item.url }}">{{ submenu_item.title }}</a>
                             </li>
                           {% endfor %}
                         </ul>
