@@ -19,7 +19,9 @@
       - title: Woodland Heights Cemetery
         url: /woodland-heights-cemetery
     -
-      - title: Community Development
+      - title: Parks and Recreation
+        url: /parks-and-recreation
+      - title: Rector Downtown Central
         url: javascript:void(0);
       - title: Chamber of Commerce
         url: javascript:void(0);
@@ -30,11 +32,11 @@
     -
       - title: History
         url: javascript:void(0);
-      - title: Business
+      - title: Business Directory
         url: javascript:void(0);
-      - title: Labor Day
+      - title: Labor Day Picnic
         url: javascript:void(0);
-      - title: Museum
+      - title: Rector Community Museum
         url: javascript:void(0);
     -
       - title: Churches
@@ -46,8 +48,6 @@
       - title: Health Care
         url: javascript:void(0);
     -
-      - title: About Town
-        url: javascript:void(0);
       - title: Clay County Arts Council, Inc.
         url: javascript:void(0);
       - title: Garden Club
