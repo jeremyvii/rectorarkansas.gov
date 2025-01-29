@@ -1,0 +1,57 @@
+---
+layout: default
+title: Documents
+description: Documents and forms relating to the City of Rector, Arkansas.
+
+applications_permits:
+  - name: Rural Fire Protection Enrollment Form
+    link: /assets/documents/rural-fire-new-customer-enrollment-form.pdf
+  - name: Building Permit Application
+    link: /assets/documents/building-permit-application.pdf
+  - name: Golf Cart Permit Application
+    link: /assets/documents/golf-cart-permit-application.pdf
+  - name: Occupation License Application
+    link: /assets/documents/occupation-license-application.pdf
+  - name: Chicken Permit Application
+    link: /assets/documents/chicken-permit.pdf
+  - name: Tile Permit Application
+    link: /assets/documents/tile-permit-form.pdf
+
+zoning_planing:
+  - name: Zoning Map
+    link: javascript:void(0)
+---
+<section class="usa-section bg-primary">
+  <div class="grid-container">
+    <h1 class="text-white">{{ page.title }}</h1>
+    <p class="usa-intro text-white">{{ page.description }}</p>
+  </div>
+</section>
+<section class="usa-section grid-container" id="applications-and-permits">
+  <h2>Applications and Permits</h2>
+  <ul class="usa-list--unstyled grid-row grid-gap-2">
+    {% for item in page.applications_permits %}
+      <li class="tablet:grid-col-6">
+        <a class="usa-button width-full margin-bottom-2 flex-justify-start" href="{{ item.link }}">
+          {% include icon.html icon="file_download" %}
+          {{ item.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="usa-section bg-base-lightest" id="zoning-and-planning">
+  <div class="grid-container">
+    <h2>Zoning and Planning</h2>
+    <ul class="usa-list--unstyled grid-row grid-gap-2">
+      {% for item in page.zoning_planing %}
+        <li class="tablet:grid-col-6">
+          <a class="usa-button width-full margin-bottom-2 flex-justify-start" href="{{ item.link }}">
+            {% include icon.html icon="file_download" %}
+            {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
