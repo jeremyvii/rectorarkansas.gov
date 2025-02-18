@@ -37,14 +37,17 @@
       - title: Labor Day Picnic
         url: javascript:void(0);
       - title: Rector Community Museum
-        url: javascript:void(0);
+        url: https://rectormuseum.com
+        external: true
     -
       - title: Churches
         url: javascript:void(0);
-      - title: Schools
-        url: javascript:void(0);
+      - title: Rector School District
+        url: https://www.rector.k12.ar.us
+        external: true
       - title: Public Library
-        url: javascript:void(0);
+        url: https://www.mylibrarynow.org/rector
+        external: true
       - title: Health Care
         url: javascript:void(0);
     -

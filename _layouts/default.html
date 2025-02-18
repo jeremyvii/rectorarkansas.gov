@@ -73,8 +73,17 @@
                               {% assign submenu_classes = submenu_classes|append: ' usa-current' %}
                             {% endif %}
 
+                            {% if submenu_item.external %}
+                              {% assign submenu_classes = submenu_classes|append: ' usa-link--external' %}
+
+                            {% endif %}
+
                             <li class="usa-nav__submenu-item">
-                              <a class="{{ submenu_classes }}" href="{{ submenu_item.url }}">{{ submenu_item.title }}</a>
+                              <a
+                                class="{{ submenu_classes }}"
+                                href="{{ submenu_item.url }}"
+                                {% if submenu_item.external %}target="_blank" rel="noopener noreferrer"{% endif %}
+                              >{{ submenu_item.title }}</a>
                             </li>
                           {% endfor %}
                         </ul>
