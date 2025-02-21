@@ -38,6 +38,10 @@
               {% assign classes = classes|append: ' usa-current' %}
             {% endif %}
 
+            {% if menu_item.external %}
+              {% assign classes = classes|append: ' usa-link--external' %}
+            {% endif %}
+
             {% if menu_item.submenu %}
               {% assign classes = 'usa-accordion__button usa-nav__link' %}
 
@@ -75,7 +79,6 @@
 
                             {% if submenu_item.external %}
                               {% assign submenu_classes = submenu_classes|append: ' usa-link--external' %}
-
                             {% endif %}
 
                             <li class="usa-nav__submenu-item">
@@ -99,6 +102,15 @@
             {% endif %}
           {% endfor %}
         </ul>
+        <div class="usa-nav__secondary">
+          <ul class="usa-nav__secondary-links">
+            <li class="usa-nav__secondary-item">
+              <a class="usa-button usa-link--external margin-right-0" href="javascript:void(0);">
+                Pay Water Bill
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>

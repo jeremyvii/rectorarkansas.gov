@@ -68,11 +68,26 @@ img {
   height: auto;
 }
 
+.usa-nav__primary-item > .usa-link--external::after {
+  margin-top: 0;
+}
+
 .usa-nav__submenu-item .usa-current {
   @include add-bar(0.5, "white", "bottom", 0, 2);
 
   &::after {
     left: .5rem;
     right: .5rem;
+  }
+}
+
+.usa-nav__secondary {
+  @include at-media($theme-header-min-width) {
+    right: 1rem;
+
+    .usa-button,
+    .usa-button:hover {
+      color: #fff;
+    }
   }
 }
