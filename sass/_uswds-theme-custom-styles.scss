@@ -84,10 +84,10 @@ img {
 .usa-nav__secondary {
   @include at-media($theme-header-min-width) {
     right: 1rem;
+  }
 
-    .usa-button,
-    .usa-button:hover {
-      color: #fff;
-    }
+  .usa-button,
+  .usa-button:hover {
+    color: #fff;
   }
 }
