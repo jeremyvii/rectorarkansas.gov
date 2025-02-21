@@ -14,13 +14,11 @@
         url: /fire-and-ambulance-rescue-department
       - title: Rector Community Center
         url: /rector-community-center
-      - title: Rector Beautification Committee
-        url: /rector-beautification-committee
       - title: Woodland Heights Cemetery
         url: /woodland-heights-cemetery
-    -
       - title: Parks and Recreation
         url: /parks-and-recreation
+    -
       - title: Rector Downtown Central
         url: javascript:void(0);
       - title: Chamber of Commerce
@@ -36,25 +34,23 @@
         url: javascript:void(0);
       - title: Labor Day Picnic
         url: javascript:void(0);
+    -
       - title: Rector Community Museum
         url: https://rectormuseum.com
         external: true
-    -
       - title: Churches
         url: javascript:void(0);
       - title: Rector School District
         url: https://www.rector.k12.ar.us
         external: true
+    -
       - title: Public Library
         url: https://www.mylibrarynow.org/rector
         external: true
       - title: Health Care
         url: javascript:void(0);
-    -
-      - title: Clay County Arts Council, Inc.
-        url: javascript:void(0);
-      - title: Garden Club
-        url: javascript:void(0);
+      #- title: Clay County Arts Council, Inc.
+      #  url: javascript:void(0);
 - title: Documents
   url: /documents
 - title: Frequently Asked Questions
