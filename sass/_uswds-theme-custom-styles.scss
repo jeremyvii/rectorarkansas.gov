@@ -91,3 +91,21 @@ img {
     color: #fff;
   }
 }
+
+.usa-button--white {
+  @include set-text-and-bg("white");
+
+  &:visited {
+    @include set-text-and-bg("white");
+  }
+
+  &:hover,
+  &.usa-button--hover {
+    @include set-text-and-bg("gray-10");
+  }
+
+  &:active,
+  &.usa-button--active {
+    @include set-text-and-bg("gray-20");
+  }
+}
