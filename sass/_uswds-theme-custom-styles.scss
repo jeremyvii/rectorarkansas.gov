@@ -109,3 +109,8 @@ img {
     @include set-text-and-bg("gray-20");
   }
 }
+
+.usa-nav__secondary .water-bill-pay-button {
+  display: inline-flex;
+  margin-right: 0;
+}
