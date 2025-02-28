@@ -39,7 +39,7 @@
         url: https://rectormuseum.com
         external: true
       - title: Churches
-        url: javascript:void(0);
+        url: /churches
       - title: Rector School District
         url: https://www.rector.k12.ar.us
         external: true

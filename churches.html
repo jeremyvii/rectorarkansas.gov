@@ -1,0 +1,94 @@
+---
+title: Churches
+description: Learn about the churches in Rector, AR and the surrounding area.
+layout: default
+
+churches:
+  - name: First Baptist Church
+    phone: (870) 595-3668
+    link:
+      - text: First Baptist Church's Website
+        url: https://www.rectorfirst.org/
+  - name: First General Baptist Church
+    phone: (870) 595-3825
+    link:
+      - text: First General Baptist Church's Website
+        url: http://www.fgbcrector.com/
+  - name: First United Methodist Church
+    phone: (870) 595-2552
+    minister: Jonathan Bevil
+    link:
+      - text: First United Methodist Church's Facebook Page
+        url: https://www.facebook.com/rectorfumc/
+  - name: 5th & Pine Church of Christ
+    phone: (870) 595-3020
+    minister: Aaron Bevil
+    link:
+      - text: 5th & Pine Church of Christ's Facebook Page
+        url: https://www.facebook.com/5thandpineyouthgroup/
+  - name: 9th & Hafford Church of Christ
+    phone: (870) 544-2249
+  - name: Hargrave Corner Evangelical Methodist Church
+    phone: (870) 522-3402
+    # No link found
+  - name: New Hope Missionary Baptist Church
+    # No phone number or link found
+  - name: New Life Christian Church
+    phone: (870) 535-3500
+    minister: Philip Larue
+  - name: Rector Primitive Baptist Church
+    phone: (870) 597-4524
+    minister: Charles Horton
+  - name: Smith Chapel General Baptist
+    phone: (870) 595-3813
+    minister: Erine Rinks
+---
+<section>
+  <div class="usa-section bg-primary">
+    <div class="grid-container">
+      <h1 class="text-white">{{ page.title }}</h1>
+      <p class="usa-intro text-white">
+        Rector is home to several vibrant churches. Whether you’re looking for a large, contemporary congregation or a small traditional service, you’ll find it here.
+      </p>
+    </div>
+  </div>
+  <div class="usa-section grid-container">
+    <ul class="usa-card-group">
+      {% for church in page.churches %}
+        <li class="usa-card tablet:grid-col-6">
+          <div class="usa-card__container">
+            <div class="usa-card__header">
+              <h2 class="usa-card__heading">{{ church.name }}</h2>
+            </div>
+            <div class="usa-card__body">
+              <p>
+                <span class="text-bold">Phone:</span><br>
+                <a class="usa-link" href="tel:{{ church.phone | remove: '(' | remove: ')' | remove: '-' | remove: ' ' }}">
+                  {{ church.phone }}
+                </a>
+              </p>
+
+              {% if church.minister %}
+                <p>
+                  <span class="text-bold">Minister:</span><br>
+
+                  {{ church.minister }}
+                </p>
+              {% endif %}
+
+              {% if church.link %}
+                <p>
+                  {% for link in church.link %}
+                    <a class="usa-link usa-link--external" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                      {{ link.text }}
+                    </a>
+                  {% endfor %}
+                </p>
+              {% endif %}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
