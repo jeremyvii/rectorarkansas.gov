@@ -61,12 +61,14 @@ churches:
               <h2 class="usa-card__heading">{{ church.name }}</h2>
             </div>
             <div class="usa-card__body">
-              <p>
-                <span class="text-bold">Phone:</span><br>
-                <a class="usa-link" href="tel:{{ church.phone | remove: '(' | remove: ')' | remove: '-' | remove: ' ' }}">
-                  {{ church.phone }}
-                </a>
-              </p>
+              {% if church.phone %}
+                <p>
+                  <span class="text-bold">Phone:</span><br>
+                  <a class="usa-link" href="tel:{{ church.phone | remove: '(' | remove: ')' | remove: '-' | remove: ' ' }}">
+                    {{ church.phone }}
+                  </a>
+                </p>
+              {% endif %}
 
               {% if church.minister %}
                 <p>
