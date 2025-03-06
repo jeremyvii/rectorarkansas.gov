@@ -80,7 +80,7 @@ city_contacts:
           <div class="usa-card__body">
             <address>
               <p>{{ contact.address }}<br>{{ contact.city }}, {{ contact.state }} {{ contact.zip }}</p>
-              <p class="margin-0"><a class="usa-link" href="tel:{{ contact.phone }}">{{ contact.phone }}</a></p>
+              <p class="margin-0"><a class="usa-link" href="{{ contact.phone | prepare_tel_uri }}">{{ contact.phone }}</a></p>
             </address>
           </div>
         </div>

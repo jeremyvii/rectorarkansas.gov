@@ -167,7 +167,7 @@ third_party_service_providers:
                     <span class="text-bold">{{ provider.phone[0].text }}:</span><br>
                     <a
                       class="usa-link"
-                      href="tel:{{ provider.phone[0].phone|remove: '('|remove: ')'|remove: '-'|remove: ' ' }}"
+                      href="{{ provider.phone[0].phone | prepare_tel_uri }}"
                     >{{ provider.phone[0].phone }}</a>
                   </p>
                 {% else %}
@@ -178,7 +178,7 @@ third_party_service_providers:
                           <span class="text-bold">{{ phone.text }}:</span><br>
                           <a
                             class="usa-link"
-                            href="tel:{{ phone.phone|remove: '('|remove: ')'|remove: '-'|remove: ' '  }}"
+                            href="{{ phone.phone | prepare_tel_uri }}"
                           >{{ phone.phone }}</a>
                         </p>
                       </li>

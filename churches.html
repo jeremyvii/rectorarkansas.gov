@@ -64,7 +64,7 @@ churches:
               {% if church.phone %}
                 <p>
                   <span class="text-bold">Phone:</span><br>
-                  <a class="usa-link" href="tel:{{ church.phone | remove: '(' | remove: ')' | remove: '-' | remove: ' ' }}">
+                  <a class="usa-link" href="{{ church.phone | prepare_tel_uri }}">
                     {{ church.phone }}
                   </a>
                 </p>
