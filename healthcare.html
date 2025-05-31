@@ -1,0 +1,55 @@
+---
+title: Healthcare
+description: Learn about the healthcare in Rector, AR and the surrounding area.
+layout: default
+
+facilities:
+  - name: Family Care Clinic of Rector
+    address: 715 E 9th St<br>Rector, AR 72461
+    phone: (870) 595-3596
+    link: https://piggotthealthsystem.com/department/rector-clinic/
+---
+<section>
+  <div class="usa-section bg-primary">
+    <div class="grid-container">
+      <h1 class="text-white">{{ page.title }}</h1>
+      <p class="usa-intro text-white">
+        The Rector community is fortunate to have access to quality 
+        healthcare services, including a medical clinic, a dental clinic, a 
+        chiropractic office, a hometown pharmacy, and a 70-bed nursing home 
+        facility. Additionally, two hospitals and an urgent care center are 
+        located within a 21-mile radius. Rector is also just 45 miles from 
+        Jonesboro, home to St. Bernards Medical Center, NEA Baptist Memorial 
+        Hospital, HealthSouth Rehabilitation Hospital, and the Outpatient 
+        Surgery Center.
+      </p>
+    </div>
+  </div>
+  <div class="usa-section grid-container">
+    <ul class="usa-card-group">
+      {% for facility in page.facilities %}
+        <li class="usa-card tablet:grid-col-6">
+          <div class="usa-card__container">
+            <div class="usa-card__header">
+              <h2 class="usa-card__heading">{{ facility.name }}</h2>
+            </div>
+            <div class="usa-card__body">
+              <address>
+                <p>{{ facility.address }}</p>
+                <p class="margin-0"><a class="usa-link" href="{{ facility.phone | prepare_tel_uri }}">{{ facility.phone }}</a></p>
+              </address>
+
+              {% if facility.link %}
+                <p>
+                  <a class="usa-link usa-link--external" href="{{ facility.link }}" target="_blank" rel="noopener noreferrer">
+                    View {{ facility.name }}
+                  </a>
+                </p>
+              {% endif %}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
