@@ -4,28 +4,42 @@ description: Learn about the healthcare in Rector, AR and the surrounding area.
 layout: default
 
 facilities:
+  - name: Blackshare Family Denistry
+    address: 737 E 9th St,<br>Rector, AR 72461
+    phone: (870) 595-3463
+    link: https://www.facebook.com/p/Blackshare-Family-Dentistry-100061273784909/
   - name: Family Care Clinic of Rector
-    address: 715 E 9th St<br>Rector, AR 72461
+    address: 715 E 9th St,<br>Rector, AR 72461
     phone: (870) 595-3596
     link: https://piggotthealthsystem.com/department/rector-clinic/
+  - name: Rector Downtown Drug
+    address: 316 E 9th St, Rector,<br>AR 72461
+    phone: (870) 595-3523
+    link: https://www.rectordowntowndrug.com/
+  - name: Rector Nursing & Rehab
+    address: 1023 State Hwy 119,<br>Rector, AR 72461
+    phone: (870) 595-1040
+    link: https://rectornursing.com/
 ---
 <section>
   <div class="usa-section bg-primary">
     <div class="grid-container">
       <h1 class="text-white">{{ page.title }}</h1>
-      <p class="usa-intro text-white">
-        The Rector community is fortunate to have access to quality 
-        healthcare services, including a medical clinic, a dental clinic, a 
-        chiropractic office, a hometown pharmacy, and a 70-bed nursing home 
-        facility. Additionally, two hospitals and an urgent care center are 
-        located within a 21-mile radius. Rector is also just 45 miles from 
-        Jonesboro, home to St. Bernards Medical Center, NEA Baptist Memorial 
-        Hospital, HealthSouth Rehabilitation Hospital, and the Outpatient 
-        Surgery Center.
-      </p>
     </div>
   </div>
   <div class="usa-section grid-container">
+    <p class="usa-intro">
+      The Rector community is fortunate to have access to quality 
+      healthcare services, including a medical clinic, a dental clinic, a 
+      chiropractic office, a hometown pharmacy, and a 70-bed nursing home 
+      facility. Additionally, two hospitals and an urgent care center are 
+      located within a 21-mile radius. Rector is also just 45 miles from 
+      Jonesboro, home to St. Bernards Medical Center, NEA Baptist Memorial 
+      Hospital, HealthSouth Rehabilitation Hospital, and the Outpatient 
+      Surgery Center.
+    </p>
+
+
     <ul class="usa-card-group">
       {% for facility in page.facilities %}
         <li class="usa-card tablet:grid-col-6">
