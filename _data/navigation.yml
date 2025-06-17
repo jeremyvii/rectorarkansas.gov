@@ -29,7 +29,7 @@
   submenu:
     -
       - title: History
-        url: javascript:void(0);
+        url: /history
       - title: Business Directory
         url: javascript:void(0);
       - title: Labor Day Picnic
@@ -49,8 +49,6 @@
         external: true
       - title: Health Care
         url: /healthcare
-      #- title: Clay County Arts Council, Inc.
-      #  url: javascript:void(0);
 - title: Documents
   url: /documents
 - title: Contact
