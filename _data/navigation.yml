@@ -31,7 +31,7 @@
       - title: History
         url: /history
       - title: Business Directory
-        url: javascript:void(0);
+        url: /business-directory
       - title: Labor Day Picnic
         url: javascript:void(0);
     -
