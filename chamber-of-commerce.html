@@ -2,6 +2,99 @@
 title: Chamber of Commerce
 description: The 
 layout: default
+
+members:
+  - Adams Nursery
+  - Anchor Packaging LLC
+  - Arkansas Methodist Ambulance
+  - Baldwin Conservation Group
+  - Big Time Pizza & Bakery
+  - Black River Technical College
+  - Blackshare Family Dentistry
+  - Glenna Bookout
+  - Carl and Melba Bradberry
+  - Branch Thompson Warmath Dale & Butler PA - Kimberly Dale
+  - Shawn Brandon
+  - Cadence Bank
+  - The Caffeinated Cow
+  - Joe Calvin
+  - Camilo's Mexican Restaurant
+  - Centennial Bank
+  - City of Rector
+  - Clay County Connect
+  - Clay County Electric Cooperative
+  - The Copper Rose
+  - Cox Lumber Company
+  - Cupples Sign Company, Inc.
+  - Shelia Dale
+  - Buddy and Sherry Dills
+  - Ed's Shop
+  - Entergy Arkansas
+  - Betty Essman
+  - Farm Bureau Insurance - Michael Lindsey
+  - Farm Credit Mid-America
+  - Johnny and Teresa Frankel
+  - Glen Sain Motor Sales
+  - Graves Gin Corporation
+  - The Greenbriar Companies
+  - Harold Implement Company, Inc.
+  - Harps Food Store
+  - Lura Holifield
+  - Irby-Mitchell Funeral Home
+  - Jeremy Jackson and Gabriella Kirkham
+  - Ron and Nancy Kemp
+  - KLB Woodworking
+  - Liberty Hill Outfitters
+  - Mack Family Farms
+  - Mahan Builders, LLC
+  - Lisa Manchester
+  - Mark and Lindsey Manchester
+  - Marwood Properties
+  - Mavis Smith Auction Company
+  - The Noles Social
+  - Karen Nutt
+  - Maxine Parmenter
+  - Mike Patterson, Clay County Judge
+  - Patrick Patterson, Clay County Justice of the Peace
+  - Piggott Health System
+  - Piggott Realty, Inc.
+  - Piggott State Bank
+  - Rector Barber & Style - Heather Bowman
+  - Rector Community Museum
+  - Rector Downtown Drug
+  - Rector First Baptist Church
+  - Rector First United Methodist Church
+  - Rector Public Library
+  - Rector School District
+  - Recurrent Energy, LLC
+  - Debbie Robinson
+  - Linda Robinson
+  - Ken and Vickie Roden
+  - David and Kim Romine
+  - Shayne and Teresa Roofe
+  - Salon 309 - Colby Ford
+  - Kelly and Rheba Scobey
+  - Shelton Sanitation, Inc.
+  - SherBar/Hamilton Farms
+  - Terry Shultz
+  - Sign-Tech of Paragould
+  - Sigsby Real Estate
+  - Becca Simmons
+  - Jody and Heather Simmons
+  - Shirley Simmons
+  - Simmons & Sons Farms
+  - Craig Snow
+  - Traveling Whisk
+  - United Country Rector Realty and Auction, Inc.
+  - Veterans Memorial Park Association
+  - Watson Oil Company, Inc.
+  - Alma Webb
+  - David Neil and Tracy Webb
+  - White & Associates - Crancer Insurance
+  - Wicker Lawncare & Landscaping
+  - Wilcoxson's Home Place Furniture & Appliances
+  - Tom and Crystal Williams
+  - Z's Salon
 ---
 <section>
   <div class="usa-section bg-primary margin-bottom-3">
@@ -19,6 +112,13 @@ layout: default
     </div>
   </div>
   <div class="grid-container">
+    <img
+      class="desktop:float-right desktop:margin-left-2"
+      src="/assets/img/chamber-building.webp"
+      alt="A frontal view of the Rector Chamber of Commerce building."
+      width="500"
+      height="417"
+    />
     <p class="usa-paragraph">
       We are dedicated to the development of community prosperity through 
       active support and patronage of local businesses and industry. We also 
@@ -45,7 +145,7 @@ layout: default
       Commerce is working hard to expand its membership and welcomes all 
       businesses and individuals to join in our worthy cause.
     </p>
-    <h3>Chamber Directors</h3>
+    <h3>Directors</h3>
     <ul class="usa-list usa-list--unstyled">
       <li>President: Mark Manchester</li>
       <li>Vice President: Marla Crancer</li>
@@ -53,6 +153,12 @@ layout: default
       <li>Executive Director: Crystal Williams</li>
       <li>Board Member: Stephen Crancer</li>
       <li>Board Member: Lindsay Wingo</li>
+    </ul>
+    <h3>Members</h3>
+    <ul class="grid-row grid-gap usa-list--unstyled">
+      {% for member in page.members %}
+        <li class="tablet:grid-col-6 margin-top-2">{{ member }}</li>
+      {% endfor %}
     </ul>
   </div>
 </section>
