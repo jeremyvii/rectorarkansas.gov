@@ -18,22 +18,24 @@ applications_permits:
     link: /assets/documents/tile-permit-form.pdf
 
 planning_zoning:
-  - name: Zoning Map
+  - name: Zoning Map (as of 2008) [PDF, 1 Page]
     link: /assets/documents/rector-zoning-map.pdf
-  - name: Zoning Definitions
-    link: javascript:void(0)
+  - name: Zoning Regulations [PDF, 30 Pages]
+    link: /assets/documents/zoning-regulations.pdf
 
-important_ordnances:
-  - name: Ordinance 123
-    link: javascript:void(0)
-  - name: Ordinance 124
-    link: javascript:void(0)
-  - name: Ordinance 125
-    link: javascript:void(0)
-  - name: Ordinance 126
-    link: javascript:void(0)
-  - name: Ordinance 127
-    link: javascript:void(0)
+important_ordinances:
+  - name: Ord 585 - Prevent Discharge of Firearms in the City [PDF, 3 Pages]
+    link: /assets/documents/ord-585.pdf
+  - name: Ord 576 - Amended Ord. 557 and 432; Keeping of Small Farm Animals [PDF, 2 Pages]
+    link: /assets/documents/ord-576.pdf
+  - name: Ord 574 - Use of Recreational Vehicles in the City [PDF, 2 Pages]
+    link: /assets/documents/ord-574.pdf
+  - name: Ord 573 - Building Permit Fees [PDF, 1 Page]
+    link: /assets/documents/ord-573.pdf
+  - name: Ord 497 - Yard Ordinance [PDF, 3 Pages]
+    link: /assets/documents/ord-497.pdf
+  - name: Ord 328 - Building Permits [PDF, 6 Pages]
+    link: /assets/documents/ord-328.pdf
 ---
 <section class="usa-section bg-primary">
   <div class="grid-container">
@@ -43,11 +45,11 @@ important_ordnances:
 </section>
 <section class="usa-section grid-container" id="applications-and-permits">
   <h2>Applications and Permits</h2>
-  <ul class="usa-list--unstyled grid-row grid-gap-2">
+  <p class="usa-paragraph margin-bottom-0">Each application and permit below are PDFs and one page unless otherwise noted.</p>
+  <ul class="usa-list--unstyled grid-row grid-gap-2 margin-bottom-0">
     {% for item in page.applications_permits %}
-      <li class="tablet:grid-col-6">
-        <a class="usa-button width-full margin-bottom-2 flex-justify-start" href="{{ item.link }}">
-          {% include icon.html icon="file_download" %}
+      <li class="tablet:grid-col-6 margin-top-3">
+        <a class="usa-button width-full flex-justify-start" href="{{ item.link }}">
           {{ item.name }}
         </a>
       </li>
@@ -56,12 +58,11 @@ important_ordnances:
 </section>
 <section class="usa-section bg-base-lightest" id="zoning-and-planning">
   <div class="grid-container">
-    <h2>Planning and Zoning</h2>
+    <h2 class="margin-bottom-0">Planning and Zoning</h2>
     <ul class="usa-list--unstyled grid-row grid-gap-2">
       {% for item in page.planning_zoning %}
-        <li class="tablet:grid-col-6">
-          <a class="usa-button width-full margin-bottom-2 flex-justify-start" href="{{ item.link }}">
-            {% include icon.html icon="file_download" %}
+        <li class="tablet:grid-col-6 margin-top-3">
+          <a class="usa-button width-full flex-justify-start" href="{{ item.link }}">
             {{ item.name }}
           </a>
         </li>
@@ -70,16 +71,26 @@ important_ordnances:
   </div>
 </section>
 <section class="usa-section grid-container" id="important-ordinances">
-  <h2>Important Ordinances</h2>
-  <ul class="usa-list--unstyled grid-row grid-gap-2">
-    {% for item in page.important_ordnances %}
-      <li class="tablet:grid-col-6">
-        <a class="usa-button width-full margin-bottom-2 flex-justify-start" href="{{ item.link }}">
-          {% include icon.html icon="file_download" %}
+  <h2 class="margin-bottom-0">Important Ordinances</h2>
+  <ul class="usa-list--unstyled">
+    {% for item in page.important_ordinances %}
+      <li class="margin-top-3">
+        <a class="usa-button width-full flex-justify-start" href="{{ item.link }}">
           {{ item.name }}
         </a>
       </li>
     {% endfor %}
   </ul>
 </section>
-
+<section class="usa-section bg-base-lightest" id="disclaimer">
+  <div class="grid-container">
+    <h2>Disclaimer</h2>
+    <p class="usa-paragraph">
+      The documents provided on this page are for informational purposes only. 
+      While we strive to ensure accuracy and completeness, no guarantees are made 
+      as to their legal validity, currency, or applicability. For official 
+      interpretations or legally binding information, please contact City Hall or 
+      consult with the appropriate legal authority.
+    </p>
+  </div>
+</section>
