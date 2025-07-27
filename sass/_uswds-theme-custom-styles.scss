@@ -118,3 +118,7 @@ figure {
   display: inline-flex;
   margin-right: 0;
 }
+
+.usa-identifier {
+  font-size: size('body', $theme-type-scale-xs);
+}
