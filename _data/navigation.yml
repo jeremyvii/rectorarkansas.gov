@@ -47,7 +47,7 @@
         external: true
     -
       - title: Public Library
-        url: https://www.mylibrarynow.org/rector
+        url: https://mylibrarynow.org/rector
         external: true
       - title: Health Care
         url: /healthcare
