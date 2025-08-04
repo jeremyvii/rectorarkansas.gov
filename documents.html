@@ -22,6 +22,14 @@ planning_zoning:
     link: /assets/documents/rector-zoning-map.pdf
   - name: Zoning Regulations [PDF, 30 Pages]
     link: /assets/documents/zoning-regulations.pdf
+  - name: R-1 Manufactured Home Checklist [PDF, 8 Pages]
+    link: /assets/documents/R-1-Manufactured-Home-Checklist.pdf
+  - name: R-2 Manufactured Home Checklist [PDF, 8 Pages]
+    link: /assets/documents/R-2-Manufactured-Home-Checklist.pdf
+  - name: Certificate of Zoning Compliance and Foundation Permit Application [PDF, 3 Pages]
+    link: /assets/documents/certificate-of-zoning-compliance-and-foundation-permit.pdf
+  - name: Variance Request Form [PDF, 2 Pages]
+    link: /assets/documents/Variance-Request-Form.pdf
 
 important_ordinances:
   - name: Ord 585 - Prevent Discharge of Firearms in the City [PDF, 3 Pages]
@@ -61,8 +69,8 @@ important_ordinances:
     <h2 class="margin-bottom-0">Planning and Zoning</h2>
     <ul class="usa-list--unstyled grid-row grid-gap-2">
       {% for item in page.planning_zoning %}
-        <li class="tablet:grid-col-6 margin-top-3">
-          <a class="usa-button width-full flex-justify-start" href="{{ item.link }}">
+        <li class="tablet:grid-col-12 margin-top-3">
+          <a class="usa-button width-full flex-justify-start text-left" href="{{ item.link }}">
             {{ item.name }}
           </a>
         </li>
