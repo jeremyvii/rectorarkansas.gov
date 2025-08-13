@@ -19,12 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: City of Rector Arkansas
-email: info@rectorarkansas.com
+email: info@rectorarkansas.gov
 description:
   Rector Arkansas is a small town in Northeast Arkansas. This site is dedicated to the history and people of Rector Arkansas.
 baseurl: "" # the subpath of your site, e.g. /blog
-domain: rectorarkansas.com
-url: "https://rectorarkansas.com" # the base hostname & protocol for your site, e.g. http://example.com
+domain: rectorarkansas.gov
+url: "https://rectorarkansas.gov" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jeremyvii
 
 permalink: /:title
