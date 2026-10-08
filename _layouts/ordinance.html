@@ -1,0 +1,104 @@
+---
+layout: default
+---
+<style>
+  .usa-prose ol {
+    list-style-type: upper-alpha;
+  }
+  .usa-prose ol ol {
+    list-style-type: decimal;
+  }
+  .usa-prose ol ol ol {
+    list-style-type: lower-alpha;
+  }
+</style>
+<div class="usa-section grid-container">
+  <div class="usa-prose">
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.short_title }}</h2>
+  </div>
+  <section class="usa-summary-box margin-bottom-4" aria-labelledby="ordinance-details">
+    <div class="usa-summary-box__body">
+      <h2 class="usa-summary-box__heading" id="ordinance-details">
+        Ordinance details
+      </h2>
+
+      <dl class="grid-row grid-gap margin-0">
+        <div class="tablet:grid-col-6 margin-bottom-2">
+          <dt class="text-bold">Adopted</dt>
+          <dd class="margin-left-0">
+            <time datetime="{{ page.adopted_date }}">{{ page.adopted_date | date: "%B %d, %Y" }}</time>
+          </dd>
+        </div>
+
+        <div class="tablet:grid-col-6 margin-bottom-2">
+          <dt class="text-bold">Status</dt>
+          <dd class="margin-left-0">{{ page.status | capitalize }}</dd>
+        </div>
+
+        <div class="tablet:grid-col-6 margin-bottom-2">
+          <dt class="text-bold">Amends</dt>
+          <dd class="margin-left-0">
+            {% for ordinance in page.amends %}
+              <a href="/ordinances/{{ ordinance | downcase | replace: ' ', '-' }}/">{{ ordinance }}</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </dd>
+        </div>
+
+        <div class="tablet:grid-col-6 margin-bottom-2">
+          <dt class="text-bold">Repeals</dt>
+          <dd class="margin-left-0">
+            {% for ordinance in page.repeals %}
+              <a href="/ordinances/{{ ordinance | downcase | replace: ' ', '-' }}/">{{ ordinance }}</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </dd>
+        </div>
+
+        <div class="tablet:grid-col-6 margin-bottom-2">
+          <dt class="text-bold">Mayor</dt>
+          <dd class="margin-left-0">{{ page.officials.mayor }}</dd>
+        </div>
+
+        <div class="tablet:grid-col-6 margin-bottom-2">
+          <dt class="text-bold">City Clerk</dt>
+          <dd class="margin-left-0">{{ page.officials.city_clerk }}</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+  <div class="usa-alert usa-alert--info usa-alert--slim margin-bottom-4">
+    <div class="usa-alert__body">
+      <p class="usa-alert__text">
+        This page is an accessible transcription of the ordinance.
+        <a href="{{ page.source.file }}" target="_blank" rel="noopener noreferrer">
+          View the signed ordinance PDF
+        </a>.
+      </p>
+    </div>
+  </div>
+  <ul class="usa-list usa-list--unstyled display-flex flex-wrap">
+    {% for category in page.categories %}
+      <li class="margin-right-1 margin-bottom-1">
+        <span class="usa-tag">{{ category }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="grid-row grid-gap">
+    <div class="tablet:grid-col-9">
+      <div class="usa-prose">
+
+        {{ content }}
+      </div>
+    </div>
+    <div class="tablet:grid-col-3">
+      <div
+        class="usa-in-page-nav"
+        data-title-text="On this page"
+        data-title-heading-level="h2"
+        data-scroll-offset="0"
+        data-root-margin="0px 0px 0px 0px"
+        data-threshold="1"
+      ></div>
+    </div>
+  </div>
+</div>
