@@ -1,0 +1,36 @@
+---
+layout: default
+title: Ordinances
+description: Learn about the ordinances in Rector, AR.
+---
+<section class="usa-section grid-container">
+  {% assign ordinances = site.ordinances | sort: 'adopted_date' | reverse %}
+  <div class="usa-table-container--scrollable" tabindex="0"></div>
+    <table class="usa-table usa-table--stacked usa-table--striped">
+      <thead>
+        <tr>
+          <th scope="col">Ordinance</th>
+          <th scope="col">Adopted</th>
+          <th scope="col">Description</th>
+          <th scope="col">Status</th>
+          <th scope="col">Mayor</th>
+          <th scope="col">City Clerk</th>
+          <th scope="col">Categories</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for ordinance in ordinances %}
+          <tr>
+            <td><a href="{{ ordinance.url }}">{{ ordinance.title }}</a></td>
+            <td>{{ ordinance.adopted_date | date: "%B %d, %Y" }}</td>
+            <td>{{ ordinance.short_title }}</td>
+            <td>{{ ordinance.status | capitalize }}</td>
+            <td>{{ ordinance.officials.mayor }}</td>
+            <td>{{ ordinance.officials.city_clerk }}</td>
+            <td>{{ ordinance.categories | join: ", " }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>

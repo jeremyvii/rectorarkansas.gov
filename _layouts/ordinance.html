@@ -55,7 +55,10 @@ layout: default
                 <dt class="text-bold">Amends</dt>
                 <dd class="margin-left-0">
                   {% for ordinance in page.amends %}
-                    <a href="/ordinances/{{ ordinance | downcase | replace: ' ', '-' }}/">{{ ordinance }}</a>{% unless forloop.last %}, {% endunless %}
+                    <a 
+                      class="usa-link" 
+                      href="/ordinances/{{ ordinance | downcase | replace: ' ', '-' }}/"
+                    >{{ ordinance }}</a>{% unless forloop.last %}, {% endunless %}
                   {% endfor %}
                 </dd>
               </div>
@@ -66,7 +69,10 @@ layout: default
                 <dt class="text-bold">Repeals</dt>
                 <dd class="margin-left-0">
                   {% for ordinance in page.repeals %}
-                    <a href="/ordinances/{{ ordinance | downcase | replace: ' ', '-' }}/">{{ ordinance }}</a>{% unless forloop.last %}, {% endunless %}
+                    <a 
+                      class="usa-link" 
+                      href="/ordinances/{{ ordinance | downcase | replace: ' ', '-' }}/"
+                    >{{ ordinance }}</a>{% unless forloop.last %}, {% endunless %}
                   {% endfor %}
                 </dd>
               </div>
