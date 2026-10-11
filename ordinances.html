@@ -3,7 +3,10 @@ layout: default
 title: Ordinances
 description: Learn about the ordinances in Rector, AR.
 ---
-<section class="usa-section grid-container">
+<section class="usa-section margin-x-4">
+  <div class="usa-prose grid-container">
+    <h1>{{ page.title }}</h1>
+  </div>
   {% assign ordinances = site.ordinances | sort: 'adopted_date' | reverse %}
   <div class="usa-table-container--scrollable" tabindex="0">
     <table class="usa-table usa-table--stacked usa-table--striped">
