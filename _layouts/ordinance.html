@@ -64,6 +64,20 @@ layout: default
               </div>
             {% endif %}
 
+            {% if page.amended_by %}
+              <div class="tablet:grid-col-6 margin-bottom-2">
+                <dt class="text-bold">Amended by</dt>
+                <dd class="margin-left-0">
+                  {% for ordinance in page.amended_by %}
+                    <a 
+                      class="usa-link" 
+                      href="/ordinances/{{ ordinance | downcase | replace: ' ', '-' }}/"
+                    >{{ ordinance }}</a>{% unless forloop.last %}, {% endunless %}
+                  {% endfor %}
+                </dd>
+              </div>
+            {% endif %}
+
             {% if page.repeals %}
               <div class="tablet:grid-col-6 margin-bottom-2">
                 <dt class="text-bold">Repeals</dt>
