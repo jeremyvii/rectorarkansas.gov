@@ -12,18 +12,30 @@ This website was built with the [U.S. Web Design System (USWDS)](https://designs
 
 - Ruby (>= 2.7 recommended)
 - Bundler (`gem install bundler`)
-- Node.js (optional, depending on any additional tooling)
+- Node.js (for Pagefind ordinance search and USWDS tooling)
 
 ### Install dependencies
 
 ```
 bundle install
+npm ci
 ```
 
 ### Run locally
 
 ```
-bundle exec jekyll serve
+npm run build
+bundle exec jekyll serve --skip-initial-build
 ```
 
 Then open `http://localhost:4000` in your browser.
+
+`npm run build` builds Jekyll and then generates the Pagefind index from
+`site.ordinances`, including ordinance titles, details, and full text. Use this
+command for production builds and deploy the complete `_site` directory,
+including `_site/pagefind`. Pagefind is loaded only by the ordinance listing page,
+when a visitor searches.
+
+After editing ordinances during local development, run `npm run index:ordinances`
+once Jekyll has rebuilt the pages to refresh the search index. For a custom Jekyll
+destination, run `node scripts/index-ordinances.mjs path/to/site` after building.

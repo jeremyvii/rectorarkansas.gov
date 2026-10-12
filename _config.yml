@@ -49,3 +49,6 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - scss/
+  - scripts/
+  - package.json
+  - package-lock.json

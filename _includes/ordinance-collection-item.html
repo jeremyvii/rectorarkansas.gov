@@ -1,0 +1,33 @@
+{% assign ordinance = include.ordinance %}
+<li class="usa-collection__item">
+  <div class="usa-collection__body">
+    <h2 class="usa-collection__heading">
+      <a
+        class="usa-link"
+        href="{{ ordinance.url | relative_url }}" data-ordinance-link
+        >{{ ordinance.title }}</a
+      >
+    </h2>
+    <p class="usa-collection__description">{{ ordinance.short_title }}</p>
+    <p class="usa-collection__description" data-search-excerpt hidden></p>
+    <ul class="usa-collection__meta" aria-label="{{ ordinance.title }} details">
+      <li class="usa-collection__meta-item">
+        Status: {{ ordinance.status | capitalize }}
+      </li>
+      <li class="usa-collection__meta-item">
+        Mayor: {{ ordinance.officials.mayor }}
+      </li>
+      <li class="usa-collection__meta-item">
+        City Clerk: {{ ordinance.officials.city_clerk }}
+      </li>
+      <li class="usa-collection__meta-item">
+        <time datetime="{{ ordinance.adopted_date }}">{{ ordinance.adopted_date | date: "%B %d, %Y" }}</time>
+      </li>
+    </ul>
+    <ul class="usa-collection__meta" aria-label="Categories">
+      {% for category in ordinance.categories %}
+        <li class="usa-collection__meta-item usa-tag">{{ category }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</li>

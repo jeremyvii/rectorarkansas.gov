@@ -3,37 +3,34 @@ layout: default
 title: Ordinances
 description: Learn about the ordinances in Rector, AR.
 ---
-<section class="usa-section margin-x-4">
-  <div class="usa-prose grid-container">
+<style>
+  #ordinance-search[hidden],
+  #ordinance-search [hidden],
+  #ordinance-list[hidden] {
+    display: none !important;
+  }
+</style>
+<section class="usa-section grid-container">
+  <div class="usa-prose">
     <h1>{{ page.title }}</h1>
   </div>
-  {% assign ordinances = site.ordinances | sort: 'adopted_date' | reverse %}
-  <div class="usa-table-container--scrollable" tabindex="0">
-    <table class="usa-table usa-table--stacked usa-table--striped">
-      <thead>
-        <tr>
-          <th scope="col">Ordinance</th>
-          <th scope="col">Adopted</th>
-          <th scope="col">Description</th>
-          <th scope="col">Status</th>
-          <th scope="col">Mayor</th>
-          <th scope="col">City Clerk</th>
-          <th scope="col">Categories</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for ordinance in ordinances %}
-          <tr>
-            <td><a href="{{ ordinance.url }}">{{ ordinance.title }}</a></td>
-            <td>{{ ordinance.adopted_date | date: "%B %d, %Y" }}</td>
-            <td>{{ ordinance.short_title }}</td>
-            <td>{{ ordinance.status | capitalize }}</td>
-            <td>{{ ordinance.officials.mayor }}</td>
-            <td>{{ ordinance.officials.city_clerk }}</td>
-            <td>{{ ordinance.categories | join: ", " }}</td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+  <div id="ordinance-search" class="margin-top-3" data-bundle-url="{{ '/pagefind/pagefind.js' | relative_url }}" hidden>
+    <form class="usa-search usa-search--big" role="search">
+      <label class="usa-sr-only" for="ordinance-query">Search ordinances</label>
+      <input class="usa-input" id="ordinance-query" type="search" name="query" placeholder="Search ordinances" aria-describedby="ordinance-search-help">
+      <button class="usa-button" type="submit"><span class="usa-search__submit-text">Search</span></button>
+    </form>
+    <p id="ordinance-search-help">Search ordinance numbers, titles, details, and full text. Clear the search to browse all ordinances.</p>
+    <p id="ordinance-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    <ul id="ordinance-search-results" class="usa-collection" aria-label="Search results" hidden></ul>
+    <button id="ordinance-search-more" class="usa-button usa-button--outline margin-bottom-3" type="button" hidden>Show more results</button>
   </div>
+  <noscript><p>Enable JavaScript to search ordinances, or browse the list below.</p></noscript>
+  {% assign ordinances = site.ordinances | sort: 'adopted_date' | reverse %}
+  <ul id="ordinance-list" class="usa-collection">
+    {% for ordinance in ordinances %}
+      {% include ordinance-collection-item.html ordinance=ordinance %}
+    {% endfor %}
+  </ul>
 </section>
+<script type="module" src="{{ '/assets/js/ordinance-search.js' | relative_url }}"></script>
