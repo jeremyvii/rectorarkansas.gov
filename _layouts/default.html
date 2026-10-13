@@ -6,6 +6,9 @@
   <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/uswds/css/styles.css">
+  {% if layout.noindex %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
 </head>
 <body>
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
