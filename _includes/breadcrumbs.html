@@ -1,0 +1,19 @@
+{% comment %}
+  Optional ancestors: page.breadcrumbs, an ordered list of title/url pairs.
+  Home and the current page are added automatically.
+{% endcomment %}
+<nav class="usa-breadcrumb" aria-label="Breadcrumbs">
+  <ol class="usa-breadcrumb__list">
+    <li class="usa-breadcrumb__list-item">
+      <a class="usa-breadcrumb__link" href="{{ '/' | relative_url }}"><span>Home</span></a>
+    </li>
+    {% for breadcrumb in include.breadcrumbs %}
+      <li class="usa-breadcrumb__list-item">
+        <a class="usa-breadcrumb__link" href="{{ breadcrumb.url | relative_url | escape }}"><span>{{ breadcrumb.title | escape }}</span></a>
+      </li>
+    {% endfor %}
+    <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+      <span>{{ page.title | escape }}</span>
+    </li>
+  </ol>
+</nav>
