@@ -19,15 +19,15 @@ noindex: true
 
 <div class="usa-section grid-container">
   <div class="usa-in-page-nav-container">
-    <div
+    <aside
       class="usa-in-page-nav"
       data-title-text="On this page"
       data-title-heading-level="h2"
       data-scroll-offset="0"
       data-root-margin="0px 0px 0px 0px"
       data-threshold="1"
-    ></div>
-    <div class="main-content">
+    ></aside>
+    <article class="main-content">
       {% include breadcrumbs.html breadcrumbs=layout.breadcrumbs %}
       <div class="usa-prose">
         <h1>{{ page.title }}</h1>
@@ -136,6 +136,6 @@ noindex: true
 
         {{ content }}
       </div>
-    </div>
+    </article>
   </div>
 </div>
