@@ -39,3 +39,20 @@ when a visitor searches.
 After editing ordinances during local development, run `npm run index:ordinances`
 once Jekyll has rebuilt the pages to refresh the search index. For a custom Jekyll
 destination, run `node scripts/index-ordinances.mjs path/to/site` after building.
+
+## Ordinance editorial conventions
+
+Website transcriptions use sentence case for text printed in all capitals in the
+source, including headings, recitals, and approval statements. Preserve proper
+names, acronyms, defined terms, zoning codes, and section or subsection labels.
+Capitalization changes do not change source wording, punctuation, or numbering.
+Keep archived PDFs unchanged so readers can compare the original documents.
+
+Ordinance front matter uses quoted strings for ordinance identifiers (including
+amendment and repeal references) and ISO dates. Page numbers, counts, and
+spreadsheet row numbers remain integers; unknown values remain `null`. Use two
+spaces for each indentation level, indented block lists, double-quoted strings,
+and blank lines between metadata groups. Keep the same group order: layout and
+instrument type; titles and identifier; dates; status; source; transcription;
+verification; officials; ordinance relationships; categories. Preserve existing
+metadata values and verification findings when making formatting changes.
