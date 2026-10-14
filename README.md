@@ -36,6 +36,11 @@ command for production builds and deploy the complete `_site` directory,
 including `_site/pagefind`. Pagefind is loaded only by the ordinance listing page,
 when a visitor searches.
 
+Netlify uses `netlify.toml` to run `npm run build` and publish `_site`. Running
+only `bundle exec jekyll build` skips the Pagefind index and leaves deployed
+ordinance search unavailable. The deploy log should include
+`Indexed … ordinances from site.ordinances.` before publishing.
+
 The ordinance search supports category and legal-status checkboxes using
 [Pagefind filters](https://pagefind.app/docs/js-api-filtering/). Values come from
 ordinance `categories` and `status` front matter. Selections match any value within
