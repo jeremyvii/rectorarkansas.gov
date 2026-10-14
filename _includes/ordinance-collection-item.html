@@ -1,5 +1,17 @@
 {% assign ordinance = include.ordinance %}
-<li class="usa-collection__item">
+
+{% assign search_weight = 1 %}
+
+{% case ordinance.status %}
+  {% when "active" %}
+    {% assign search_weight = 2 %}
+  {% when "amended" %}
+    {% assign search_weight = 0.75 %}
+  {% when "repealed" %}
+    {% assign search_weight = 0.25 %}
+{% endcase %}
+
+<li class="usa-collection__item" data-search-weight="{{ search_weight }}" data-adopted-date="{{ ordinance.adopted_date | date: '%Y-%m-%d' }}">
   <div class="usa-collection__body">
     <h2 class="usa-collection__heading">
       <a

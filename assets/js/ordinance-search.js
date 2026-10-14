@@ -23,7 +23,7 @@ container.hidden = false;
 async function showMore(version) {
   more.disabled = true;
   try {
-    const batch = await Promise.all(matches.slice(shown, shown + pageSize).map(result => result.data()));
+    const batch = matches.slice(shown, shown + pageSize);
     if (version !== generation) return;
     for (const result of batch) {
       const original = itemsByUrl.get(new URL(result.url, document.baseURI).href);
@@ -79,7 +79,20 @@ async function search(version) {
     const engine = await pagefind;
     const response = await engine.search(query || null, { filters });
     if (version !== generation) return;
-    matches = response.results;
+    // Resolve URLs before sorting so every page follows the collection's status weights.
+    const ordered = await Promise.all(response.results.map(async result => {
+      const data = await result.data();
+      const original = itemsByUrl.get(new URL(data.url, document.baseURI).href);
+      if (!original) throw new Error(`Missing collection item for ${data.url}`);
+      return {
+        data,
+        weight: Number(original.dataset.searchWeight),
+        adoptedDate: original.dataset.adoptedDate || '',
+      };
+    }));
+    if (version !== generation) return;
+    ordered.sort((a, b) => b.weight - a.weight || b.adoptedDate.localeCompare(a.adoptedDate));
+    matches = ordered.map(result => result.data);
     shown = 0;
     if (!matches.length) {
       status.textContent = 'No ordinances found. Try another search term or change the filters.';
