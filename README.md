@@ -36,6 +36,11 @@ command for production builds and deploy the complete `_site` directory,
 including `_site/pagefind`. Pagefind is loaded only by the ordinance listing page,
 when a visitor searches.
 
+The ordinance search supports category and legal-status checkboxes using
+[Pagefind filters](https://pagefind.app/docs/js-api-filtering/). Values come from
+ordinance `categories` and `status` front matter. Selections match any value within
+each group and both groups when used together, with or without a search term.
+
 After editing ordinances during local development, run `npm run index:ordinances`
 once Jekyll has rebuilt the pages to refresh the search index. For a custom Jekyll
 destination, run `node scripts/index-ordinances.mjs path/to/site` after building.

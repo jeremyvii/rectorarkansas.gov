@@ -5,6 +5,8 @@ const status = document.querySelector('#ordinance-search-status');
 const results = document.querySelector('#ordinance-search-results');
 const list = document.querySelector('#ordinance-list');
 const more = document.querySelector('#ordinance-search-more');
+const filterControls = document.querySelector('#ordinance-search-filters');
+const clearFilters = document.querySelector('#ordinance-search-clear-filters');
 // Reuse the collection items rendered by Liquid for both browsing and searching.
 const itemsByUrl = new Map(
   Array.from(list.children, item => [item.querySelector('[data-ordinance-link]').href, item])
@@ -29,8 +31,8 @@ async function showMore(version) {
       const item = original.cloneNode(true);
       const excerpt = item.querySelector('[data-search-excerpt]');
       // Pagefind escapes source HTML before adding its search-term marks.
-      excerpt.innerHTML = result.excerpt;
-      excerpt.hidden = false;
+      excerpt.innerHTML = result.excerpt || '';
+      excerpt.hidden = !input.value.trim() || !result.excerpt;
       results.append(item);
     }
     shown += batch.length;
@@ -51,9 +53,16 @@ function showError(version) {
 
 async function search(version) {
   const query = input.value.trim();
+  const filters = {};
+  for (const checkbox of filterControls.querySelectorAll('input:checked')) {
+    filters[checkbox.dataset.filter] ||= { any: [] };
+    filters[checkbox.dataset.filter].any.push(checkbox.value);
+  }
+  const hasFilters = Object.keys(filters).length > 0;
+  clearFilters.hidden = !hasFilters;
   results.replaceChildren();
   more.hidden = true;
-  if (!query) {
+  if (!query && !hasFilters) {
     list.hidden = false;
     results.hidden = true;
     status.textContent = '';
@@ -68,12 +77,12 @@ async function search(version) {
       throw error;
     });
     const engine = await pagefind;
-    const response = await engine.search(query);
+    const response = await engine.search(query || null, { filters });
     if (version !== generation) return;
     matches = response.results;
     shown = 0;
     if (!matches.length) {
-      status.textContent = 'No ordinances found. Try another term or ordinance number.';
+      status.textContent = 'No ordinances found. Try another search term or change the filters.';
       return;
     }
     await showMore(version);
@@ -91,6 +100,15 @@ input.addEventListener('input', () => {
 });
 form.addEventListener('submit', event => {
   event.preventDefault();
+  clearTimeout(timer);
+  search(++generation);
+});
+filterControls.addEventListener('change', () => {
+  clearTimeout(timer);
+  search(++generation);
+});
+clearFilters.addEventListener('click', () => {
+  for (const checkbox of filterControls.querySelectorAll('input:checked')) checkbox.checked = false;
   clearTimeout(timer);
   search(++generation);
 });

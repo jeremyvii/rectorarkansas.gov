@@ -22,7 +22,35 @@ noindex: true
       <input class="usa-input" id="ordinance-query" type="search" name="query" placeholder="Search ordinances" aria-describedby="ordinance-search-help">
       <button class="usa-button" type="submit"><span class="usa-search__submit-text">Search</span></button>
     </form>
-    <p id="ordinance-search-help">Search ordinance numbers, titles, details, and full text. Clear the search to browse all ordinances.</p>
+    <p id="ordinance-search-help">Search ordinance numbers, titles, details, and full text. Select categories or legal statuses to narrow results. Multiple selections within a group match any selected value. Clear the search and filters to browse all ordinances.</p>
+    <details class="margin-top-3 border-1px border-base-lighter padding-2">
+      <summary class="text-bold text-primary">Filter by category and legal status</summary>
+      <div id="ordinance-search-filters" class="grid-row grid-gap margin-top-3" aria-describedby="ordinance-search-help">
+        {% assign categories = site.ordinances | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
+        <fieldset class="usa-fieldset tablet:grid-col-8">
+          <legend class="usa-legend">Categories</legend>
+          <div class="grid-row grid-gap">
+            {% for category in categories %}
+              <div class="usa-checkbox tablet:grid-col-6">
+                <input class="usa-checkbox__input" id="ordinance-category-{{ forloop.index }}" type="checkbox" data-filter="category" value="{{ category | escape }}">
+                <label class="usa-checkbox__label" for="ordinance-category-{{ forloop.index }}">{{ category | capitalize | escape }}</label>
+              </div>
+            {% endfor %}
+          </div>
+        </fieldset>
+        {% assign statuses = site.ordinances | map: 'status' | uniq | sort %}
+        <fieldset class="usa-fieldset tablet:grid-col-4">
+          <legend class="usa-legend">Legal status</legend>
+          {% for ordinance_status in statuses %}
+            <div class="usa-checkbox">
+              <input class="usa-checkbox__input" id="ordinance-status-{{ forloop.index }}" type="checkbox" data-filter="status" value="{{ ordinance_status | escape }}">
+              <label class="usa-checkbox__label" for="ordinance-status-{{ forloop.index }}">{{ ordinance_status | replace: '_', ' ' | capitalize | escape }}</label>
+            </div>
+          {% endfor %}
+        </fieldset>
+      </div>
+    </details>
+    <button id="ordinance-search-clear-filters" class="usa-button usa-button--unstyled margin-top-2" type="button" hidden>Clear filters</button>
     <p id="ordinance-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
     <ul id="ordinance-search-results" class="usa-collection" aria-label="Search results" hidden></ul>
     <button id="ordinance-search-more" class="usa-button usa-button--outline margin-bottom-3" type="button" hidden>Show more results</button>

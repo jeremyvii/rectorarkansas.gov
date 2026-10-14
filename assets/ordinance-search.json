@@ -14,6 +14,10 @@ layout: null
     "url": {{ ordinance.url | relative_url | jsonify }},
     "content": {{ searchable_content | normalize_whitespace | jsonify }},
     "language": "en",
+    "filters": {
+      "category": {{ ordinance.categories | jsonify }},
+      "status": [{{ ordinance.status | default: 'unknown' | jsonify }}]
+    },
     "meta": {
       "title": {{ ordinance.title | jsonify }},
       "description": {{ ordinance.short_title | default: '' | jsonify }}
