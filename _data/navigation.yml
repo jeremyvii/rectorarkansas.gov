@@ -51,6 +51,8 @@
         external: true
       - title: Health Care
         url: /healthcare
+- title: Ordinances
+  url: /ordinances
 - title: Documents
   url: /documents
 - title: Contact

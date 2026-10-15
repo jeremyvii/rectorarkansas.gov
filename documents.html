@@ -18,12 +18,12 @@ applications_permits:
     link: /assets/documents/tile-permit-form.pdf
 
 planning_zoning:
+  - name: Planning and Zoning Ordinances
+    link: /ordinances/?category=planning+and+zoning
   - name: City of Rector Comphrehensive Land Use Plan (2025-2030) [PDF, 5 Pages]
     link: /assets/documents/city-of-rector-comprehensive-land-use-plan-2025-2030.pdf
   - name: Zoning Map (as of 2008) [PDF, 1 Page]
     link: /assets/documents/rector-zoning-map.pdf
-  - name: Zoning Regulations [PDF, 30 Pages]
-    link: /assets/documents/zoning-regulations.pdf
   - name: Manufactured Home Checklist [PDF, 8 Pages]
     link: /assets/documents/manufactured-home-checklist.pdf
   - name: Certificate of Zoning Compliance and Foundation Permit Application [PDF, 3 Pages]
@@ -32,18 +32,19 @@ planning_zoning:
     link: /assets/documents/Variance-Request-Form.pdf
 
 important_ordinances:
-  - name: Ord 585 - Prevent Discharge of Firearms in the City [PDF, 3 Pages]
-    link: /assets/documents/ord-585.pdf
-  - name: Ord 576 - Amended Ord. 557 and 432; Keeping of Small Farm Animals [PDF, 2 Pages]
-    link: /assets/documents/ord-576.pdf
-  - name: Ord 574 - Use of Recreational Vehicles in the City [PDF, 2 Pages]
-    link: /assets/documents/ord-574.pdf
-  - name: Ord 573 - Building Permit Fees [PDF, 1 Page]
-    link: /assets/documents/ord-573.pdf
-  - name: Ord 497 - Yard Ordinance [PDF, 3 Pages]
-    link: /assets/documents/ord-497.pdf
-  - name: Ord 328 - Building Permits [PDF, 6 Pages]
-    link: /assets/documents/ord-328.pdf
+  - "599"
+  - "585"
+  - "583"
+  - "576"
+  - "574"
+  - "573"
+  - "571"
+  - "565" 
+  - "514"
+  - "497"
+  - "475"
+  - "434"
+  - "379"
 ---
 <section class="usa-section bg-primary">
   <div class="grid-container">
@@ -81,10 +82,11 @@ important_ordinances:
 <section class="usa-section grid-container" id="important-ordinances">
   <h2 class="margin-bottom-0">Important Ordinances</h2>
   <ul class="usa-list--unstyled">
-    {% for item in page.important_ordinances %}
+    {% assign important_ordinances = site.ordinances | where_exp: "ordinance", "page.important_ordinances contains ordinance.ordinance_number" | sort: 'adopted_date' | reverse %}
+    {% for ordinance in important_ordinances %}
       <li class="margin-top-3">
-        <a class="usa-button width-full flex-justify-start text-left" href="{{ item.link }}">
-          {{ item.name }}
+        <a class="usa-button width-full flex-justify-start text-left" href="{{ ordinance.url }}">
+          {{ ordinance.title }} {{ ordinance.short_title }}
         </a>
       </li>
     {% endfor %}
