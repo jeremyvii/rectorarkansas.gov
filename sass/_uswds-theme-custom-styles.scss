@@ -122,3 +122,16 @@ figure {
 .usa-identifier {
   font-size: size('body', $theme-type-scale-xs);
 }
+
+summary {
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.usa-alert summary.usa-alert__heading {
+  margin-bottom: 0;
+}

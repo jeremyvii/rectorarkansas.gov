@@ -115,6 +115,7 @@ noindex: true
       </section>
       <div class="usa-alert usa-alert--info usa-alert--slim margin-bottom-4">
         <div class="usa-alert__body">
+          <h2 class="usa-alert__heading">About this page</h2>
           <p class="usa-alert__text">
             This page is an accessible transcription of the ordinance.
             <a href="{{ page.source.file }}" target="_blank" rel="noopener noreferrer">
@@ -123,6 +124,19 @@ noindex: true
           </p>
         </div>
       </div>
+
+      <div class="usa-alert usa-alert--warning usa-alert--slim margin-bottom-4">
+        <div class="usa-alert__body">
+          <h2 class="usa-alert__heading">Notice</h2>
+          <p class="usa-alert__text">
+            This searchable transcription is provided for convenience and may 
+            contain errors. Ordinance status and amendment information 
+            may be incomplete. Consult the original document and contact the 
+            City Clerk to verify the ordinance's current legal effect.
+          </p>
+        </div>
+      </div>
+
       <ul class="usa-list usa-list--unstyled display-flex flex-wrap margin-bottom-4">
         {% for category in page.categories %}
           <li class="margin-right-1 margin-bottom-1">
