@@ -59,12 +59,7 @@ noindex: true
               <div class="tablet:grid-col-6 margin-bottom-2">
                 <dt class="text-bold">Amends</dt>
                 <dd class="margin-left-0">
-                  {% for ordinance in page.amends %}
-                    <a 
-                      class="usa-link" 
-                      href="/ordinances/{{ ordinance | downcase | replace: ' ', '-' }}/"
-                    >{{ ordinance }}</a>{% unless forloop.last %}, {% endunless %}
-                  {% endfor %}
+                  {% include ordinance-references.html references=page.amends %}
                 </dd>
               </div>
             {% endif %}
@@ -73,12 +68,7 @@ noindex: true
               <div class="tablet:grid-col-6 margin-bottom-2">
                 <dt class="text-bold">Amended by</dt>
                 <dd class="margin-left-0">
-                  {% for ordinance in page.amended_by %}
-                    <a 
-                      class="usa-link" 
-                      href="/ordinances/{{ ordinance | downcase | replace: ' ', '-' }}/"
-                    >{{ ordinance }}</a>{% unless forloop.last %}, {% endunless %}
-                  {% endfor %}
+                  {% include ordinance-references.html references=page.amended_by %}
                 </dd>
               </div>
             {% endif %}
@@ -87,12 +77,7 @@ noindex: true
               <div class="tablet:grid-col-6 margin-bottom-2">
                 <dt class="text-bold">Repeals</dt>
                 <dd class="margin-left-0">
-                  {% for ordinance in page.repeals %}
-                    <a 
-                      class="usa-link" 
-                      href="/ordinances/{{ ordinance | downcase | replace: ' ', '-' }}/"
-                    >{{ ordinance }}</a>{% unless forloop.last %}, {% endunless %}
-                  {% endfor %}
+                  {% include ordinance-references.html references=page.repeals %}
                 </dd>
               </div>
             {% endif %}

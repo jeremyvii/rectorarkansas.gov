@@ -4,9 +4,9 @@
 
 {% case ordinance.status %}
   {% when "active" %}
-    {% assign search_weight = 2 %}
+    {% assign search_weight = 3 %}
   {% when "amended" %}
-    {% assign search_weight = 0.75 %}
+    {% assign search_weight = 2 %}
   {% when "repealed" %}
     {% assign search_weight = 0.25 %}
 {% endcase %}

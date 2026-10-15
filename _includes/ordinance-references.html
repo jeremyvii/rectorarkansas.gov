@@ -1,0 +1,11 @@
+{%- assign sorted_references = include.references | sort_natural -%}
+{%- for reference in sorted_references -%}
+  {%- assign ordinance_number = reference | append: '' -%}
+  {%- assign related_ordinance = site.ordinances | where: 'ordinance_number', ordinance_number | first -%}
+  {%- if related_ordinance -%}
+    <a class="usa-link" href="{{ related_ordinance.url | relative_url | escape }}">{{ reference | escape }}</a>
+  {%- else -%}
+    <span>{{ reference | escape }} (not yet in this archive)</span>
+  {%- endif -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor -%}
