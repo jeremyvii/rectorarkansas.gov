@@ -66,3 +66,50 @@ and blank lines between metadata groups. Keep the same group order: layout and
 instrument type; titles and identifier; dates; status; source; transcription;
 verification; officials; ordinance relationships; categories. Preserve existing
 metadata values and verification findings when making formatting changes.
+
+### Ordinance categories
+
+Use the following subject categories in ordinance front matter. The listing,
+category badges, and search filters all use these values directly. Keep values
+lowercase and alphabetize each ordinance's category list. Assign more than one
+category when the ordinance substantively covers more than one subject.
+
+| Category | Scope |
+| --- | --- |
+| animal control | Dangerous animals, livestock, and animal keeping. |
+| building and construction | Building permits, construction standards, energy codes, and floodplain construction. |
+| business and franchises | Business licenses and cable, internet, and electric franchises, including franchise amendments. |
+| cemeteries | Cemetery operation and oversight. |
+| city government | Boards and commissions, authorized city business, officials' compensation, and retirement. |
+| courts and public safety | Court fines and their collection, prisoner costs, and juvenile curfews. |
+| elections | Election calls, ballot measures, referendum petitions, and elected terms. |
+| fire protection | Fire codes, burning restrictions, fireworks, fire equipment, and fire-service rates. |
+| housing | The housing authority and public housing. |
+| library | Public library operation and oversight. |
+| parks and recreation | Park management, recreation commissions, and recreation facilities. |
+| planning and zoning | Planning bodies, subdivision rules, zoning, rezoning, land use, and floodplain development. |
+| property maintenance and nuisances | Noise, abandoned or inoperable vehicles, overgrown lots, refuse, smoke, and unsafe-structure cleanup. |
+| public health and sanitation | Mosquito control, sanitary conditions, and waste collection. |
+| streets and traffic | Street naming and addressing, dedications, street and alley vacations, driving rules, and roadway obstructions. |
+| taxes and finance | Budgets, loans, bonds, taxes, franchise revenue, and officials' salaries. |
+| water and sewer | Municipal water and sewer services, rates, deposits, and related financing. |
+
+These groups consolidate the former planning/zoning, streets/traffic,
+water/sewer, budget/finance/taxes, business/franchise/utilities, and
+health/public-health/sanitation labels. Housing and library remain distinct
+because they identify separate city services, even with few records.
+
+Choose categories from the operative subject, rather than a generic safety
+statement, penalty, fee, or property reference. Service charges belong with the
+service: water rates under water and sewer, permit fees under building and
+construction, and mosquito fees under public health and sanitation. Reserve
+taxes and finance for measures substantively about city revenue, expenditure,
+budgets, or borrowing; do not add it merely because a service has a fee.
+
+Use property maintenance and nuisances for junk-vehicle storage, rather than
+streets and traffic. Use planning and zoning for residential RV use, rather than
+parks and recreation. Cross-list governing boards under city government and
+their service, and election ordinances under elections and their substantive
+topic. Apply the same subject categories to amendments when they address the
+same topic as the original ordinance. Categories are editorial navigation aids
+and do not establish an ordinance's legal status.
