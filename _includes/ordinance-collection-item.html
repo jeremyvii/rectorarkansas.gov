@@ -27,12 +27,6 @@
         Status: {{ ordinance.status | capitalize }}
       </li>
       <li class="usa-collection__meta-item">
-        Mayor: {{ ordinance.officials.mayor }}
-      </li>
-      <li class="usa-collection__meta-item">
-        Recorder/Treasurer: {{ ordinance.officials.city_clerk }}
-      </li>
-      <li class="usa-collection__meta-item">
         <time datetime="{{ ordinance.adopted_date }}">{{ ordinance.adopted_date | date: "%B %d, %Y" }}</time>
       </li>
     </ul>
