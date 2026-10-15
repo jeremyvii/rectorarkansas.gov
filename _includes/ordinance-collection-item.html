@@ -11,7 +11,7 @@
     {% assign search_weight = 0.25 %}
 {% endcase %}
 
-<li class="usa-collection__item" data-search-weight="{{ search_weight }}" data-adopted-date="{{ ordinance.adopted_date | date: '%Y-%m-%d' }}">
+<li class="usa-collection__item" data-ordinance-number="{{ ordinance.ordinance_number | escape }}" data-search-weight="{{ search_weight }}" data-adopted-date="{{ ordinance.adopted_date | date: '%Y-%m-%d' }}">
   <div class="usa-collection__body">
     <h2 class="usa-collection__heading">
       <a

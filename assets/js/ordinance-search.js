@@ -20,11 +20,35 @@ const pageSize = 10;
 
 container.hidden = false;
 
-async function showMore(version) {
+function restoreSearchFromUrl() {
+  const params = new URL(location.href).searchParams;
+  input.value = params.get('query') || '';
+  for (const checkbox of filterControls.querySelectorAll('input')) {
+    checkbox.checked = params.getAll(checkbox.dataset.filter).includes(checkbox.value);
+  }
+  if (filterControls.querySelector('input:checked')) {
+    filterControls.closest('details').open = true;
+  }
+}
+
+function updateSearchUrl(mode) {
+  const url = new URL(location.href);
+  for (const key of ['query', 'category', 'status']) url.searchParams.delete(key);
+  if (input.value.trim()) url.searchParams.set('query', input.value.trim());
+  for (const checkbox of filterControls.querySelectorAll('input:checked')) {
+    url.searchParams.append(checkbox.dataset.filter, checkbox.value);
+  }
+  if (url.href !== location.href) {
+    history[mode === 'push' ? 'pushState' : 'replaceState'](null, '', url);
+  }
+}
+
+async function showMore(version, focusNewResults = false) {
   more.disabled = true;
   try {
     const batch = matches.slice(shown, shown + pageSize);
     if (version !== generation) return;
+    let firstNewLink;
     for (const result of batch) {
       const original = itemsByUrl.get(new URL(result.url, document.baseURI).href);
       if (!original) throw new Error(`Missing collection item for ${result.url}`);
@@ -34,10 +58,12 @@ async function showMore(version) {
       excerpt.innerHTML = result.excerpt || '';
       excerpt.hidden = !input.value.trim() || !result.excerpt;
       results.append(item);
+      firstNewLink ||= item.querySelector('[data-ordinance-link]');
     }
     shown += batch.length;
     status.textContent = `${matches.length} ordinance${matches.length === 1 ? '' : 's'} found. Showing ${shown}.`;
     more.hidden = shown >= matches.length;
+    if (focusNewResults) firstNewLink?.focus();
   } finally {
     if (version === generation) more.disabled = false;
   }
@@ -51,8 +77,9 @@ function showError(version) {
   more.hidden = true;
 }
 
-async function search(version) {
+async function search(version, historyMode = 'replace') {
   const query = input.value.trim();
+  if (historyMode) updateSearchUrl(historyMode);
   const filters = {};
   for (const checkbox of filterControls.querySelectorAll('input:checked')) {
     filters[checkbox.dataset.filter] ||= { any: [] };
@@ -86,12 +113,14 @@ async function search(version) {
       if (!original) throw new Error(`Missing collection item for ${data.url}`);
       return {
         data,
+        exactNumber: original.dataset.ordinanceNumber.toLowerCase() === query.toLowerCase(),
         weight: Number(original.dataset.searchWeight),
         adoptedDate: original.dataset.adoptedDate || '',
       };
     }));
     if (version !== generation) return;
-    ordered.sort((a, b) => b.weight - a.weight || b.adoptedDate.localeCompare(a.adoptedDate));
+    ordered.sort((a, b) => Number(b.exactNumber) - Number(a.exactNumber)
+      || b.weight - a.weight || b.adoptedDate.localeCompare(a.adoptedDate));
     matches = ordered.map(result => result.data);
     shown = 0;
     if (!matches.length) {
@@ -114,18 +143,28 @@ input.addEventListener('input', () => {
 form.addEventListener('submit', event => {
   event.preventDefault();
   clearTimeout(timer);
-  search(++generation);
+  search(++generation, 'push');
 });
 filterControls.addEventListener('change', () => {
   clearTimeout(timer);
-  search(++generation);
+  search(++generation, 'push');
 });
 clearFilters.addEventListener('click', () => {
   for (const checkbox of filterControls.querySelectorAll('input:checked')) checkbox.checked = false;
   clearTimeout(timer);
-  search(++generation);
+  input.focus();
+  search(++generation, 'push');
 });
 more.addEventListener('click', () => {
   const version = generation;
-  showMore(version).catch(() => showError(version));
+  showMore(version, true).catch(() => showError(version));
 });
+
+window.addEventListener('popstate', () => {
+  clearTimeout(timer);
+  restoreSearchFromUrl();
+  search(++generation, null);
+});
+
+restoreSearchFromUrl();
+search(++generation, null);
