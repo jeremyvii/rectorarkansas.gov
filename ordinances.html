@@ -76,7 +76,6 @@ description: Learn about the ordinances in Rector, AR.
     <button id="ordinance-search-clear-filters" class="usa-button usa-button--unstyled margin-top-2" type="button" hidden>Clear filters</button>
     <p id="ordinance-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
     <ul id="ordinance-search-results" class="usa-collection" aria-label="Search results" hidden></ul>
-    <button id="ordinance-search-more" class="usa-button usa-button--outline margin-bottom-3" type="button" hidden>Show more results</button>
   </div>
   <noscript><p>Enable JavaScript to search ordinances, or browse the list below.</p></noscript>
   {% assign ordinances = site.ordinances | sort: 'adopted_date' | reverse %}
