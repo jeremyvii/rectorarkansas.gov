@@ -29,7 +29,7 @@ description: Learn about the ordinances in Rector, AR.
         this archive may contain omissions, transcription errors, or outdated
         information. Ordinances may have been amended, repealed, superseded, or
         otherwise affected by subsequent legislation or judicial decisions.
-        The searchable text, ordinance status, and amendment history are
+        The searchable text and amendment history are
         provided as reference information and have not necessarily been
         independently verified. This archive is not an officially adopted
         codification of the City's ordinances.
@@ -51,12 +51,12 @@ description: Learn about the ordinances in Rector, AR.
         />
       </button>
     </form>
-    <p id="ordinance-search-help">Search ordinance numbers, titles, details, and full text. Select categories or legal statuses to narrow results. Multiple selections within a group match any selected value. Clear the search and filters to browse all ordinances.</p>
+    <p id="ordinance-search-help">Search ordinance numbers, titles, details, and full text. Select categories to narrow results. Multiple selections match any selected category. Clear the search and filters to browse all ordinances.</p>
     <details class="margin-top-3 border-1px border-base-lighter padding-2">
-      <summary class="text-bold text-primary">Filter by category and legal status</summary>
+      <summary class="text-bold text-primary">Filter by category</summary>
       <div id="ordinance-search-filters" class="grid-row grid-gap margin-top-3" aria-describedby="ordinance-search-help">
         {% assign categories = site.ordinances | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
-        <fieldset class="usa-fieldset tablet:grid-col-8">
+        <fieldset class="usa-fieldset grid-col-12">
           <legend class="usa-legend">Categories</legend>
           <div class="grid-row grid-gap">
             {% for category in categories %}
@@ -66,16 +66,6 @@ description: Learn about the ordinances in Rector, AR.
               </div>
             {% endfor %}
           </div>
-        </fieldset>
-        {% assign statuses = site.ordinances | map: 'status' | uniq | sort %}
-        <fieldset class="usa-fieldset tablet:grid-col-4">
-          <legend class="usa-legend">Legal status</legend>
-          {% for ordinance_status in statuses %}
-            <div class="usa-checkbox">
-              <input class="usa-checkbox__input" id="ordinance-status-{{ forloop.index }}" type="checkbox" data-filter="status" value="{{ ordinance_status | escape }}">
-              <label class="usa-checkbox__label" for="ordinance-status-{{ forloop.index }}">{{ ordinance_status | replace: '_', ' ' | capitalize | escape }}</label>
-            </div>
-          {% endfor %}
         </fieldset>
       </div>
     </details>

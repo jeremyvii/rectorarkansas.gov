@@ -41,10 +41,10 @@ only `bundle exec jekyll build` skips the Pagefind index and leaves deployed
 ordinance search unavailable. The deploy log should include
 `Indexed … ordinances from site.ordinances.` before publishing.
 
-The ordinance search supports category and legal-status checkboxes using
+The ordinance search supports category checkboxes using
 [Pagefind filters](https://pagefind.app/docs/js-api-filtering/). Values come from
-ordinance `categories` and `status` front matter. Selections match any value within
-each group and both groups when used together, with or without a search term.
+ordinance `categories` front matter. Selections match any selected category,
+with or without a search term.
 
 After editing ordinances during local development, run `npm run index:ordinances`
 once Jekyll has rebuilt the pages to refresh the search index. For a custom Jekyll
@@ -63,9 +63,15 @@ amendment and repeal references) and ISO dates. Page numbers, counts, and
 spreadsheet row numbers remain integers; unknown values remain `null`. Use two
 spaces for each indentation level, indented block lists, double-quoted strings,
 and blank lines between metadata groups. Keep the same group order: layout and
-instrument type; titles and identifier; dates; status; source; transcription;
-verification; officials; ordinance relationships; categories. Preserve existing
+instrument type; titles and identifier; dates; source; transcription;
+legislative history; officials; ordinance relationships; categories. Preserve existing
 metadata values and verification findings when making formatting changes.
+
+Do not assign legal status labels to ordinances or publish legal status filters
+or badges. Preserve legislative history, including amendment and repeal
+references and their supporting evidence, separately from transcription review
+status. Store legislative evidence under `legislative_history.history` and
+follow-up actions under `legislative_history.action`.
 
 ### Ordinance categories
 

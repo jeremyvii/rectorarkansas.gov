@@ -106,7 +106,7 @@ async function search(version, historyMode = 'replace') {
     const engine = await pagefind;
     const response = await engine.search(query || null, { filters });
     if (version !== generation) return;
-    // Resolve URLs before sorting so every page follows the collection's status weights.
+    // Prioritize exact ordinance numbers, then order by adoption date.
     const ordered = await Promise.all(response.results.map(async result => {
       const data = await result.data();
       const original = itemsByUrl.get(new URL(data.url, document.baseURI).href);
@@ -114,13 +114,12 @@ async function search(version, historyMode = 'replace') {
       return {
         data,
         exactNumber: original.dataset.ordinanceNumber.toLowerCase() === query.toLowerCase(),
-        weight: Number(original.dataset.searchWeight),
         adoptedDate: original.dataset.adoptedDate || '',
       };
     }));
     if (version !== generation) return;
     ordered.sort((a, b) => Number(b.exactNumber) - Number(a.exactNumber)
-      || b.weight - a.weight || b.adoptedDate.localeCompare(a.adoptedDate));
+      || b.adoptedDate.localeCompare(a.adoptedDate));
     matches = ordered.map(result => result.data);
     shown = 0;
     if (!matches.length) {

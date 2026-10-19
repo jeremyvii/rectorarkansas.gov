@@ -1,17 +1,6 @@
 {% assign ordinance = include.ordinance %}
 
-{% assign search_weight = 1 %}
-
-{% case ordinance.status %}
-  {% when "active" %}
-    {% assign search_weight = 3 %}
-  {% when "amended" %}
-    {% assign search_weight = 2 %}
-  {% when "repealed" %}
-    {% assign search_weight = 0.25 %}
-{% endcase %}
-
-<li class="usa-collection__item" data-ordinance-number="{{ ordinance.ordinance_number | escape }}" data-search-weight="{{ search_weight }}" data-adopted-date="{{ ordinance.adopted_date | date: '%Y-%m-%d' }}">
+<li class="usa-collection__item" data-ordinance-number="{{ ordinance.ordinance_number | escape }}" data-adopted-date="{{ ordinance.adopted_date | date: '%Y-%m-%d' }}">
   <div class="usa-collection__body">
     <h2 class="usa-collection__heading">
       <a
@@ -23,9 +12,6 @@
     <p class="usa-collection__description">{{ ordinance.short_title }}</p>
     <p class="usa-collection__description" data-search-excerpt hidden></p>
     <ul class="usa-collection__meta" aria-label="{{ ordinance.title }} details">
-      <li class="usa-collection__meta-item">
-        Status: {{ ordinance.status | capitalize }}
-      </li>
       <li class="usa-collection__meta-item">
         <time datetime="{{ ordinance.adopted_date }}">{{ ordinance.adopted_date | date: "%B %d, %Y" }}</time>
       </li>

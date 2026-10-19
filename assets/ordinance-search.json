@@ -5,7 +5,7 @@ layout: null
 {% for ordinance in site.ordinances %}
   {% capture searchable_content %}
     {{ ordinance.title }} {{ ordinance.ordinance_number }} {{ ordinance.short_title }}
-    {{ ordinance.status }} {{ ordinance.adopted_date }}
+    {{ ordinance.adopted_date }}
     {{ ordinance.officials.mayor }} {{ ordinance.officials.city_clerk }}
     {{ ordinance.categories | join: ' ' }}
     {{ ordinance.content | markdownify | strip_html }}
@@ -15,8 +15,7 @@ layout: null
     "content": {{ searchable_content | normalize_whitespace | jsonify }},
     "language": "en",
     "filters": {
-      "category": {{ ordinance.categories | jsonify }},
-      "status": [{{ ordinance.status | default: 'unknown' | jsonify }}]
+      "category": {{ ordinance.categories | jsonify }}
     },
     "meta": {
       "title": {{ ordinance.title | jsonify }},
