@@ -53,12 +53,32 @@ description: Learn about the ordinances in Rector, AR.
     </form>
     <p class="usa-hint" id="ordinance-search-help">
       Search ordinance numbers, titles, details, and full text. Select 
-      categories to narrow results. Multiple selections match any selected 
-      category. Clear the search and filters to browse all ordinances.
+      categories or adoption dates to narrow results. Multiple selections match
+      any selected category. Clear the search and filters to browse all ordinances.
     </p>
     <details class="margin-top-3 border-1px border-base-lighter padding-2">
-      <summary class="text-bold text-primary">Filter by category</summary>
+      <summary class="text-bold text-primary">Filter by category or adoption date</summary>
       <div id="ordinance-search-filters" class="grid-row grid-gap margin-top-3" aria-describedby="ordinance-search-help">
+        <fieldset class="usa-fieldset grid-col-12 margin-bottom-3">
+          <legend class="usa-legend">Adoption date</legend>
+          <p class="usa-hint" id="ordinance-date-help">Both dates are included. Leave either date blank for an open-ended range.</p>
+          <div class="usa-date-range-picker grid-row grid-gap">
+            <div class="usa-form-group margin-top-0 tablet:grid-col-6">
+              <label class="usa-label" for="ordinance-date-from">From</label>
+              <div class="usa-hint" id="ordinance-date-from-hint">mm/dd/yyyy</div>
+              <div class="usa-date-picker">
+                <input class="usa-input" id="ordinance-date-from" type="text" name="date_from" aria-describedby="ordinance-date-from-hint ordinance-date-help ordinance-search-status">
+              </div>
+            </div>
+            <div class="usa-form-group margin-top-0 tablet:grid-col-6">
+              <label class="usa-label" for="ordinance-date-through">Through</label>
+              <div class="usa-hint" id="ordinance-date-through-hint">mm/dd/yyyy</div>
+              <div class="usa-date-picker">
+                <input class="usa-input" id="ordinance-date-through" type="text" name="date_through" aria-describedby="ordinance-date-through-hint ordinance-date-help ordinance-search-status">
+              </div>
+            </div>
+          </div>
+        </fieldset>
         {% assign categories = site.ordinances | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
         <fieldset class="usa-fieldset grid-col-12">
           <legend class="usa-legend">Categories</legend>

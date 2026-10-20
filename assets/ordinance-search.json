@@ -15,7 +15,8 @@ layout: null
     "content": {{ searchable_content | normalize_whitespace | jsonify }},
     "language": "en",
     "filters": {
-      "category": {{ ordinance.categories | jsonify }}
+      "category": {{ ordinance.categories | jsonify }},
+      "adopted_date": [{% if ordinance.adopted_date %}{{ ordinance.adopted_date | date: '%Y-%m-%d' | jsonify }}{% endif %}]
     },
     "meta": {
       "title": {{ ordinance.title | jsonify }},
