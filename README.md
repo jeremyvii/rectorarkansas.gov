@@ -58,6 +58,17 @@ names, acronyms, defined terms, zoning codes, and section or subsection labels.
 Capitalization changes do not change source wording, punctuation, or numbering.
 Keep archived PDFs unchanged so readers can compare the original documents.
 
+Choose ordered-list markers to match the source document, independently of
+nesting depth. Add a Kramdown attribute line immediately after each Markdown
+list, using `{: .ordinance-list-upper-alpha}`, `{: .ordinance-list-decimal}`,
+`{: .ordinance-list-lower-alpha}`, or `{: .ordinance-list-lower-roman}`. Indent
+the attribute line to match its list. For raw HTML, use the same name in the
+`<ol>` element's `class` attribute. Use `ordinance-list-none` when items already
+include their source labels in the text. Preserve `start` and `value` attributes
+for lists with continued or irregular numbering. These classes are defined in
+`sass/_uswds-theme-custom-styles.scss`; rebuild the stylesheet with
+`npx gulp compile` after changing their definitions.
+
 Ordinance front matter uses quoted strings for ordinance identifiers (including
 amendment and repeal references) and ISO dates. Page numbers, counts, and
 spreadsheet row numbers remain integers; unknown values remain `null`. Use two
