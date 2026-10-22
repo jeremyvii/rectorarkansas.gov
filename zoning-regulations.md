@@ -59,13 +59,11 @@ These regulations were adopted by reference in [Ordinance 359, § 1](/ordinances
 
 The zoning regulations and districts as set forth herein have been made in accordance with the General Plan for Land Use and Major Streets which was prepared in order to promote, in accordance with present and future needs, the safety, order. convenience, and general welfare of the citizens of Rector, Arkansas. This ordinance has been designed to lessen congestion in the streets, to secure safety from fire and other danger, to prevent the overcrowding of land and facilitate the adequate provision of water, sewerage, schools, parks, and other public improvements.
 
-*Source: [Ordinance 359, incorporated regulations, Article 1-1](/ordinances/359).*
-
 ### Article 1-2 Authority
 
 Act 186 enacted by the General Assembly of the State of Arkansas in 1957 provides the City of Rector, under guidance of the Planning Commission, with the authority to adopt, administer, enforce, and amend these regulations. These regulations are in effect within the entire City limits of Rector.
 
-*Source: [Ordinance 359, incorporated regulations, Article 1-2](/ordinances/359).*
+*Source for Section 1: [Ordinance 359, incorporated regulations, Section 1](/ordinances/359).*
 
 ## Section 2 — Definitions
 
@@ -74,7 +72,6 @@ Act 186 enacted by the General Assembly of the State of Arkansas in 1957 provide
 *Source: [Ordinance 359, incorporated regulations, Article 2-1](/ordinances/359); except definitions separately cited below.*
 
 1. Words used in the present tense include the future; words in the singular include the plural number, and words in the plural include the singular; the work "shall" is mandatory and not directory.
-
 1. Certain words and phrases shall, for the purpose of this ordinance, have the following definitions:
 
       **Accessory Structure.** A subordinate structure located on the same lot with the principal structure. Where an accessory structure is attached to the principal structure in a substantial manner, as by a roof, such accessory structure shall be considered as a part of the principal structure.
@@ -178,13 +175,9 @@ The following districts are hereby established:
 * I - Industrial
 {: .usa-list--unstyled}
 
-*Source: [Ordinance 359, incorporated regulations, Article 3-1](/ordinances/359).*
-
 ### Article 3-2 Zoning Map Established
 
 Such land and the district classification thereof shall be on the map designated as the "Zoning District Map" of the City of Rector, Arkansas, dated and signed by the Mayor.
-
-*Source: [Ordinance 359, incorporated regulations, Article 3-2](/ordinances/359).*
 
 ### Article 3-3 Boundary Interpretation
 
@@ -198,7 +191,7 @@ Interpretation of zoning district boundaries shall include the following:
 1. When the street or property layout existing on the ground is at variance with that shown on the zoning map or with other requirements of this ordinance, the Board of Zoning Adjustment shall interpret the boundaries.
 {: .upper-alpha}
 
-*Source: [Ordinance 359, incorporated regulations, Article 3-3](/ordinances/359).*
+*Source for Section 3: [Ordinance 359, incorporated regulations, Section 3](/ordinances/359).*
 
 ## Section 4 — General provisions
 
@@ -288,51 +281,35 @@ The purpose of this district is to provide land for agricultural uses, preserve 
 
 *Source: [Ordinance 359, incorporated regulations, Article 5-1](/ordinances/359).*
 
-#### A. Permitted Uses
+1. Permitted Uses
+    1. Residential structures (including mobile homes) of owners and/or operators of agricultural land.
+    1. Buildings for the storage of farm and associated equipment.
+    1. Public parks, public playgrounds and recreation areas operated by membership organizations for the benefit of their members and not for gain.
+    1. Publicly owned and operated properties.
+    1. Railroad rights-of-ways.
+    1. Places of worship and associated parish homes.
+    1. Cemeteries, including mausoleums; providing that any new cemetery shall contain an area of twenty (20) acres or more.
+    1. Roadside stands, offering for sale only farm products which are produced upon said farm land.
+    1. Riding stables and veterinary hospitals providing that buildings housing said animals shall be located at least one hundred (100) feet from all property lines.
+    1. Grain elevators or similar storage structures, including buildings for seasonal or temporary storage of farm products.
+    1. Hospitals and institutions of an educational, religious, charitable, or philanthropic nature; provided that said buildings shall not be located upon sites containing an area of less than five (5) acres.
+    1. Accessory building or use customarily incidental to any of the above uses.
+    1. Public utilities including water and sewage treatment plants, electric distribution plants and solid waste disposal areas.
 
-1. Residential structures (including mobile homes) of owners and/or operators of agricultural land.
+    *Source: [Ordinance 359, incorporated regulations, Article 5-1(A)](/ordinances/359).*
+2. Area Requirements
+    1. Each parcel of land must consist of at least five contiguous acres, excluding all buildings or other structures.
 
-1. Buildings for the storage of farm and associated equipment.
+       **Height Regulations.**
+    1. The maximum height of a structure shall be two stories and not to exceed twenty-four (24) feet.
+{: .upper-alpha}
 
-1. Public parks, public playgrounds and recreation areas operated by membership organizations for the benefit of their members and not for gain.
+B. The Planning Commission may waive the height requirements when it is demonstrated that equipment and the structure to house an agricultural operation require greater height.
 
-1. Publicly owned and operated properties.
+   *Source: [Ordinance 487, Article 5-1(B) amendment](/ordinances/487).*
 
-1. Railroad rights-of-ways.
-
-1. Places of worship and associated parish homes.
-
-1. Cemeteries, including mausoleums; providing that any new cemetery shall contain an area of twenty (20) acres or more.
-
-1. Roadside stands, offering for sale only farm products which are produced upon said farm land.
-
-1. Riding stables and veterinary hospitals providing that buildings housing said animals shall be located at least one hundred (100) feet from all property lines.
-
-1. Grain elevators or similar storage structures, including buildings for seasonal or temporary storage of farm products.
-
-1. Hospitals and institutions of an educational, religious, charitable, or philanthropic nature; provided that said buildings shall not be located upon sites containing an area of less than five (5) acres.
-
-1. Accessory building or use customarily incidental to any of the above uses.
-
-1. Public utilities including water and sewage treatment plants, electric distribution plants and solid waste disposal areas.
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-1(A)](/ordinances/359).*
-
-#### B. Area Requirements
-
-1. Each parcel of land must consist of at least five contiguous acres, excluding all buildings or other structures.
-
-   **Height Regulations.**
-
-1. The maximum height of a structure shall be two stories and not to exceed twenty-four (24) feet.
-
-##### B.
-
-The Planning Commission may waive the height requirements when it is demonstrated that equipment and the structure to house an agricultural operation require greater height.
-
-*Source: [Ordinance 487, Article 5-1(B) amendment](/ordinances/487).*
-
-*Editorial note: Ordinance 487 replaces Article 5-1(B) in full. Its repeated “B.” label is retained; the former parking paragraph is omitted from the replacement.*
+   *Editorial note: Ordinance 487 replaces Article 5-1(B) in full. Its repeated “B.” label is retained; the former parking paragraph is omitted from the replacement.*
+{: start="2" .upper-alpha}
 
 ### Article 5-2 Medium Density Residential (R1)
 
@@ -340,64 +317,53 @@ This area is intended primarily for residential neighborhoods characterized by l
 
 *Source: [Ordinance 359, incorporated regulations, Article 5-2](/ordinances/359).*
 
-#### A. Permitted Uses
+1. Permitted Uses
+    1. Single-family structures.
+    1. Public schools, parks, churches, and religious educational buildings.
+    1. Municipal recreational uses and public utilities and structures.
 
-1. Single-family structures.
+    *Source: [Ordinance 359, incorporated regulations, Article 5-2(A)](/ordinances/359).*
+1. Other Uses (With permission of the Planning Commission)
 
-1. Public schools, parks, churches, and religious educational buildings.
+    *Source for items 1–3: [Ordinance 359, incorporated regulations, Article 5-2(B)](/ordinances/359).*
 
-1. Municipal recreational uses and public utilities and structures.
+    1. Temporary buildings, the use of which are incidental to construction operations, or the sale of lots during development. Said structure shall be removed upon completion or abandonment of such construction, or upon the expiration of a period of two (2) years from the time of erection of said structure, whichever is sooner.
+    1. Accessory buildings customarily incidental to the above uses, not involving the conduct of a business. All home occupational use must make application with the Planning Commission.
+    1. Railroad rights-of-ways, but not terminal or maintenance facilities.
 
-*Source: [Ordinance 359, incorporated regulations, Article 5-2(A)](/ordinances/359).*
+    Manufactured homes shall be permitted only in accordance with Article 5-7 of these regulations.
 
-#### B. Other Uses (With permission of the Planning Commission)
+    *Source: [Ordinance 594, § 2](/ordinances/594); replacing the manufactured-home placement provisions of [Ordinance 436](/ordinances/436).*
+1. Area Requirements
+    1. Minimum Lot Area: 6,000 square feet.
+    1. Minimum Lot Width at Front Building Line:
+        1. Interior Lot: 60 feet.
+        1. Exterior Lot: 75 feet.
+    1. Minimum Lot Depth: 90 feet.
+    1. Front Yard Setback: Minimum of 15 feet from front property line.
+    1. Rear Yard Setback: Minimum of 10 feet from rear property line, or 27½ feet from centerline of alley, whichever is greater.
+    1. Side Yard Setback (interior lot): Minimum of 5 feet from each side
+    property line.
+    1. Side Yard Setback (exterior lot): Minimum of 15 feet from street-side
+    property line.
+    1. Height Regulations: Maximum height of residential structures shall not
+    exceed 24 feet above average elevation.
+    1. Parking Regulations: Two off-street parking spaces shall be provided for
+    each residence.
+    1. Accessory Buildings: No accessory building shall be erected on any required front yard. Side and rear yard setbacks shall be the same as for the principal structure. Accessory buildings shall be at least five (5) feet from all other buildings on the same lot and may not cover more than thirty (30) percent of the remaining rear yard area.
+    1. Freestanding Pre-Manufactured Carports:
+        1. Minimum side yard setback: 2 feet.
+        1. Front yard setback: Must comply with standard front yard requirement.
+        1. Rear yard setback: Minimum of 10 feet.
 
-*Source for items 1–3: [Ordinance 359, incorporated regulations, Article 5-2(B)](/ordinances/359).*
+    *Source: [Ordinance 592, § 2](/ordinances/592); replacing earlier dimensional amendments in [Ordinances 472](/ordinances/472) and [478](/ordinances/478).*
+1. Places of Public Assembly
+    1. Height: Maximum height shall be two stories and not to exceed 30 feet for that portion of the structure used for assembly or offices.
+    1. Yard Requirements: Minimum of 25 feet from all property lines. On property abutting a street, 30 feet from property line or 50 feet from center of street, whichever is greater.
+    1. On-Lot Parking: Places of public assembly shall provide one on-lot parking space per each four persons accommodated in the assembly hall.
 
-1. Temporary buildings, the use of which are incidental to construction operations, or the sale of lots during development. Said structure shall be removed upon completion or abandonment of such construction, or upon the expiration of a period of two (2) years from the time of erection of said structure, whichever is sooner.
-
-1. Accessory buildings customarily incidental to the above uses, not involving the conduct of a business. All home occupational use must make application with the Planning Commission.
-
-1. Railroad rights-of-ways, but not terminal or maintenance facilities.
-
-Manufactured homes shall be permitted only in accordance with Article 5-7 of these regulations.
-
-*Source: [Ordinance 594, § 2](/ordinances/594); replacing the manufactured-home placement provisions of [Ordinance 436](/ordinances/436).*
-
-#### C. Area Requirements
-
-1. Minimum Lot Area: 6,000 square feet.
-1. Minimum Lot Width at Front Building Line:
-    1. Interior Lot: 60 feet.
-    1. Exterior Lot: 75 feet.
-1. Minimum Lot Depth: 90 feet.
-1. Front Yard Setback: Minimum of 15 feet from front property line.
-1. Rear Yard Setback: Minimum of 10 feet from rear property line, or 27½ feet from centerline of alley, whichever is greater.
-1. Side Yard Setback (interior lot): Minimum of 5 feet from each side
-property line.
-1. Side Yard Setback (exterior lot): Minimum of 15 feet from street-side
-property line.
-1. Height Regulations: Maximum height of residential structures shall not
-exceed 24 feet above average elevation.
-1. Parking Regulations: Two off-street parking spaces shall be provided for
-each residence.
-1. Accessory Buildings: No accessory building shall be erected on any required front yard. Side and rear yard setbacks shall be the same as for the principal structure. Accessory buildings shall be at least five (5) feet from all other buildings on the same lot and may not cover more than thirty (30) percent of the remaining rear yard area.
-1. Freestanding Pre-Manufactured Carports:
-    1. Minimum side yard setback: 2 feet.
-    1. Front yard setback: Must comply with standard front yard requirement.
-    1. Rear yard setback: Minimum of 10 feet.
-
-*Source: [Ordinance 592, § 2](/ordinances/592); replacing earlier dimensional amendments in [Ordinances 472](/ordinances/472) and [478](/ordinances/478).*
-
-#### D. Places of Public Assembly
-
-1. Height: Maximum height shall be two stories and not to exceed 30 feet for that portion of the structure used for assembly or offices.
-
-1. Yard Requirements: Minimum of 25 feet from all property lines. On property abutting a street, 30 feet from property line or 50 feet from center of street, whichever is greater.
-
-1. On-Lot Parking: Places of public assembly shall provide one on-lot parking space per each four persons accommodated in the assembly hall.
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-2(D)](/ordinances/359).*
+    *Source: [Ordinance 359, incorporated regulations, Article 5-2(D)](/ordinances/359).*
+{: .upper-alpha}
 
 ### Article 5-3 High Density Residential (R2)
 
@@ -405,236 +371,174 @@ The purpose of this district is to maintain a residential environment while perm
 
 *Source: [Ordinance 359, incorporated regulations, Article 5-3](/ordinances/359).*
 
-#### A. Permitted Uses
+1. Permitted Uses
 
-*Source for items 1–10: [Ordinance 359, incorporated regulations, Article 5-3(A)](/ordinances/359).*
+    *Source for items 1–10: [Ordinance 359, incorporated regulations, Article 5-3(A)](/ordinances/359).*
 
-1. One-family dwellings.
+    1. One-family dwellings.
+    1. Two-family dwellings.
+    1. Multi-family dwellings not to exceed four units per each detached structure.
+    1. Churches.
+    1. Parks, playgrounds, etc.
+    1. Schools offering a general education course.
+    1. Hospitals, nursing homes, doctor and dental clinics, etc.
+    1. Libraries.
+    1. Public Utilities--such as water storage, power substations, fire stations, sewer lift stations, etc.
+    1. Accessory structures and uses pertinent to the principal structure and use.
+    1. Manufactured Homes. (Certificate of Zoning Compliance and Foundation permit required.) Manufactured homes shall be permitted only in accordance with Article 5-7 of these regulations.
 
-1. Two-family dwellings.
+    *Source: [Ordinance 372, § 5, Article 5-3(A)(11)](/ordinances/372); as amended by [Ordinance 594, § 3](/ordinances/594).*
+1. Other Uses (with permission of the Planning Commission)
+    1. All uses requiring Planning Commission approval in R-1 Districts.
 
-1. Multi-family dwellings not to exceed four units per each detached structure.
+    *Editorial note: All other references to manufactured or mobile homes in Article 5-3(B), including the placement and park conditions in the reference copy and the perimeter-foundation provision added by [Ordinance 447](/ordinances/447), were repealed by [Ordinance 594, § 3](/ordinances/594). See Article 5-7.*
 
-1. Churches.
+    *Source: [Ordinance 359, incorporated regulations, Article 5-3(B)](/ordinances/359).*
+1. Area Requirements
+    1. Lot Area
+        1. 6,000 square feet for the first unit, plus 2,000 square feet for each additional unit, up to four units per structure.
+    1. Minimum Lot Width at Front Building Line:
+        1. One-family: 50 feet.
+        1. Two-family: 60 feet.
+        1. For each additional unit over two: Add 10 feet.
+        1. Exterior/corner lots shall be 15 feet wider than interior lots.
+    1. Minimum Lot Depth: 70 feet.
+    1. Front Yard Setback: Minimum of 15 feet from front property line.
+    1. Side Yard Setback (interior lot): Minimum of 5 feet from each side property line.
+    1. Side Yard Setback (exterior lot): Minimum of 15 feet from street-side property line.
+    1. Rear Yard Setback: Minimum of 10 feet from rear property line, or 27½ feet from centerline of alley, whichever is greater.
+    1. Height Regulations: Maximum height of a structure shall not exceed 24 feet above average elevation.
+    1. On-lot Parking:
+        1. One and two-family: Two spaces per unit.
+        1. Multi-family dwellings: Four spaces for first two units, plus one additional space for each added unit.
+    1. Accessory Buildings: Same as R-1.
+    1. Freestanding Pre-Manufactured Carports:
+        1. Minimum side yard setback: 2 feet.
+        1. Front yard setback: Must comply with standard front yard requirement.
+        1. Rear yard setback: Minimum of 10 feet.
 
-1. Parks, playgrounds, etc.
+    *Source: [Ordinance 592, § 3](/ordinances/592); replacing earlier dimensional amendments in [Ordinances 472](/ordinances/472) and [478](/ordinances/478).*
+1. Places of Public Assembly:
 
-1. Schools offering a general education course.
+    Requirements same as for R-1 Residential District.
 
-1. Hospitals, nursing homes, doctor and dental clinics, etc.
-
-1. Libraries.
-
-1. Public Utilities--such as water storage, power substations, fire stations, sewer lift stations, etc.
-
-1. Accessory structures and uses pertinent to the principal structure and use.
-
-1. Manufactured Homes. (Certificate of Zoning Compliance and Foundation permit required.) Manufactured homes shall be permitted only in accordance with Article 5-7 of these regulations.
-
-*Source: [Ordinance 372, § 5, Article 5-3(A)(11)](/ordinances/372); as amended by [Ordinance 594, § 3](/ordinances/594).*
-
-#### B. Other Uses (with permission of the Planning Commission)
-
-1. All uses requiring Planning Commission approval in R-1 Districts.
-
-*Editorial note: All other references to manufactured or mobile homes in Article 5-3(B), including the placement and park conditions in the reference copy and the perimeter-foundation provision added by [Ordinance 447](/ordinances/447), were repealed by [Ordinance 594, § 3](/ordinances/594). See Article 5-7.*
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-3(B)](/ordinances/359).*
-
-#### C. Area Requirements
-
-1. Lot Area
-    1. 6,000 square feet for the first unit, plus 2,000 square feet for each additional unit, up to four units per structure.
-1. Minimum Lot Width at Front Building Line:
-    1. One-family: 50 feet.
-    1. Two-family: 60 feet.
-    1. For each additional unit over two: Add 10 feet.
-    1. Exterior/corner lots shall be 15 feet wider than interior lots.
-1. Minimum Lot Depth: 70 feet.
-1. Front Yard Setback: Minimum of 15 feet from front property line.
-1. Side Yard Setback (interior lot): Minimum of 5 feet from each side property line.
-1. Side Yard Setback (exterior lot): Minimum of 15 feet from street-side property line.
-1. Rear Yard Setback: Minimum of 10 feet from rear property line, or 27½ feet from centerline of alley, whichever is greater.
-1. Height Regulations: Maximum height of a structure shall not exceed 24 feet above average elevation.
-1. On-lot Parking:
-    1. One and two-family: Two spaces per unit.
-    1. Multi-family dwellings: Four spaces for first two units, plus one additional space for each added unit.
-1. Accessory Buildings: Same as R-1.
-1. Freestanding Pre-Manufactured Carports:
-    1. Minimum side yard setback: 2 feet.
-    1. Front yard setback: Must comply with standard front yard requirement.
-    1. Rear yard setback: Minimum of 10 feet.
-
-*Source: [Ordinance 592, § 3](/ordinances/592); replacing earlier dimensional amendments in [Ordinances 472](/ordinances/472) and [478](/ordinances/478).*
-
-#### D. Places of Public Assembly:
-
-Requirements same as for R-1 Residential District.
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-3(D)](/ordinances/359).*
+    *Source: [Ordinance 359, incorporated regulations, Article 5-3(D)](/ordinances/359).*
+{: .upper-alpha}
 
 ### Article 5-4 Central Business District (C1)
 
-#### A. Permitted Uses
+1. Permitted Uses
 
-*Source for items 1–6: [Ordinance 359, incorporated regulations, Article 5-4(A)](/ordinances/359).*
+    *Source for items 1–6: [Ordinance 359, incorporated regulations, Article 5-4(A)](/ordinances/359).*
 
-1. Retail establishments providing goods and services such as grocery, drug, hardware, variety stores and similar uses, and hotels, motor hotels, restaurants.
+    1. Retail establishments providing goods and services such as grocery, drug, hardware, variety stores and similar uses, and hotels, motor hotels, restaurants.
+    1. Office and bank buildings and uses.
+    1. Bulk storage of non-combustible materials.
+    1. Automotive sales, service, repair and storage.
+    1. Public buildings and uses.
+    1. Other similar uses which, in the judgement of the Planning Commission, are not in conflict with the character of the area or the intent of these regulations.
+    1. Areas of a commercially zoned building may be utilized for single or multiple family residential usage, providing the following qualifications
+       1. A minimum of two means of ingress and egress will be maintained in the residential area.
+       1. Each unit will have it's own fire extinguisher and smoke detector inside. Multiple family residences with hallways will have fire extinguisher and smoke detectors in hallway as well.
+       1. Each residential unit will have it's own kitchen and bathroom facility
+       1. Ample parking must be provided as described in C-5 of the Zoning Code or as deemed appropriate by the Planning Commission, but not less than two spaces per unit.
+       1. Fire chief or his designee shall make an annual inspection of the apartment and residence to see that the structure is in compliance and make a report to the Code Enforcement Officer.
+       1. Property owners shall have 90 days to be in compliance.
+       1. No motor vehicle repair or maintenance work shall take place outdoors within 150 feet of the boundary of any residential facility.
+       1. Refuse storage areas shall be screened from view.
+       1. Mechanical and electrical equipment, including air conditioning units shall be screened from view.
+       1. All uses shall operate in accordance with the noise standards contained in the Noise Ordinance
 
-1. Office and bank buildings and uses.
+    *Source: [Ordinance 536, Article 5-4(A)(7) amendment](/ordinances/536); replacing [Ordinance 461, Article 5-4(A)(7)](/ordinances/461).*
+1. Area Requirements
+    1. Height: Two stories, but not exceeding 30 feet.
+    1. Front Yard: Zero
+    1. Side Yard: Zero
+    1. Rear Yard: 20 feet from property line or center of alley where one exists.
+    1. Loading and Unloading: Loading and unloading facilities shall be provided so as not to block any public way.
+    1. Fire Limits: Land in the Central Business District shall be included within the fire limits of the City of Rector, Arkansas.
 
-1. Bulk storage of non-combustible materials.
+    *Source: [Ordinance 359, incorporated regulations, Article 5-4(B)](/ordinances/359).*
+1. Places of Public Assembly
+    1. Height: Two stories and not to exceed 30 feet for that portion of the structure to be used for public assembly or offices.
+    1. Yard Requirements:
+       1. Front Yard: Zero
+       1. Side Yard: Zero
+       1. Rear Yard: 20 feet from property line or center of alley where one exists.
 
-1. Automotive sales, service, repair and storage.
+    *Source: [Ordinance 359, incorporated regulations, Article 5-4(C)](/ordinances/359).*
+1. Parking:
 
-1. Public buildings and uses.
+    as determined by the Planning Commission.
 
-1. Other similar uses which, in the judgement of the Planning Commission, are not in conflict with the character of the area or the intent of these regulations.
-
-1. Areas of a commercially zoned building may be utilized for single or multiple family residential usage, providing the following qualifications
-
-   1. A minimum of two means of ingress and egress will be maintained in the residential area.
-   1. Each unit will have it's own fire extinguisher and smoke detector inside. Multiple family residences with hallways will have fire extinguisher and smoke detectors in hallway as well.
-   1. Each residential unit will have it's own kitchen and bathroom facility
-   1. Ample parking must be provided as described in C-5 of the Zoning Code or as deemed appropriate by the Planning Commission, but not less than two spaces per unit.
-   1. Fire chief or his designee shall make an annual inspection of the apartment and residence to see that the structure is in compliance and make a report to the Code Enforcement Officer.
-   1. Property owners shall have 90 days to be in compliance.
-   1. No motor vehicle repair or maintenance work shall take place outdoors within 150 feet of the boundary of any residential facility.
-   1. Refuse storage areas shall be screened from view.
-   1. Mechanical and electrical equipment, including air conditioning units shall be screened from view.
-   1. All uses shall operate in accordance with the noise standards contained in the Noise Ordinance
-
-*Source: [Ordinance 536, Article 5-4(A)(7) amendment](/ordinances/536); replacing [Ordinance 461, Article 5-4(A)(7)](/ordinances/461).*
-
-#### B. Area Requirements
-
-1. Height: Two stories, but not exceeding 30 feet.
-
-1. Front Yard: Zero
-
-1. Side Yard: Zero
-
-1. Rear Yard: 20 feet from property line or center of alley where one exists.
-
-1. Loading and Unloading: Loading and unloading facilities shall be provided so as not to block any public way.
-
-1. Fire Limits: Land in the Central Business District shall be included within the fire limits of the City of Rector, Arkansas.
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-4(B)](/ordinances/359).*
-
-#### C. Places of Public Assembly
-
-1. Height: Two stories and not to exceed 30 feet for that portion of the structure to be used for public assembly or offices.
-
-1. Yard Requirements:
-
-   1. Front Yard: Zero
-
-   1. Side Yard: Zero
-
-   1. Rear Yard: 20 feet from property line or center of alley where one exists.
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-4(C)](/ordinances/359).*
-
-#### D. Parking:
-
-as determined by the Planning Commission.
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-4(D)](/ordinances/359).*
+    *Source: [Ordinance 359, incorporated regulations, Article 5-4(D)](/ordinances/359).*
+{: .upper-alpha}
 
 ### Article 5-5 General Business (C2)
 
-#### A. Permitted Uses
+1. Permitted Uses
+    1. Retail establishments providing goods or services.
+    1. Office buildings and uses.
+    1. Automotive service stations.
+    1. Motels, tourist courts, mobile home parks, etc.
+    1. Verterinarian clinics.
+    1. Drive-in restaurants.
+    1. Farm implements sales and storage.
+    1. Automobile sales and repair (new and used).
 
-1. Retail establishments providing goods or services.
+    *Source: [Ordinance 359, incorporated regulations, Article 5-5(A)](/ordinances/359).*
+1. Area Requirements
+    1. Minimum Lot Area: 8,000 square feet.
+    1. Minimum Lot Width at Front Building Line: 50 feet.
+    1. Maximum Lot Coverage: 60%.
+    1. Front Yard Setback:
+       1. Minimum front yard setback shall be fifteen (15) feet from the front property line.
+       1. Where a property fronts a state or federal highway, any additional access, setback, or sight-distance requirements imposed by the Arkansas Department of Transportation shall apply.
+       {: .lower-alpha}
+    1. Rear Yard Setback: Minimum of 15 feet from rear property line.
+    1. Side Yard Setback (interior lot): Minimum of 10 feet from each side property line.
+    1. Side Yard Setback (exterior lot): Minimum of 15 feet from street-side property line.
+    1. Height: Maximum height of a structure shall be two stories and not to exceed 30 feet.
+    1. On-lot Parking Spaces:
+       1. On-lot parking facilities shall be provided for all employees.
+       1. Provisions shall be made for on-lot customer parking reasonably sufficient to accommodate the intended use, as determined through building permit review by the Enforcement Officer.
+       1. Motels, tourist courts, mobile home parks shall provide one on-lot parking space for each sleeping unit or mobile home space.
+       {: .lower-alpha}
+    1. Loading and Unloading:
+       1. Loading and unloading facilities shall be provided so as not to block any public way.
+       {: .lower-alpha}
 
-1. Office buildings and uses.
+    *Source: [Ordinance 597, § 2](/ordinances/597).*
 
-1. Automotive service stations.
+    *Source verification pending: The signed scan of Ordinance 597 omits these replacement standards. The wording above comes from the [unsigned digital copy, page 2](/assets/documents/05-12-26_PC_Attachment_C-2_Area_Requirement_Ordinance.pdf#page=2). A complete executed copy is needed to confirm the adopted wording.*
+1. {: value="4"} Places of Public Assembly:
 
-1. Motels, tourist courts, mobile home parks, etc.
+    Requirements same as for R-1 Residential District.
 
-1. Verterinarian clinics.
-
-1. Drive-in restaurants.
-
-1. Farm implements sales and storage.
-
-1. Automobile sales and repair (new and used).
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-5(A)](/ordinances/359).*
-
-#### B. Area Requirements
-
-1. Minimum Lot Area: 8,000 square feet.
-1. Minimum Lot Width at Front Building Line: 50 feet.
-1. Maximum Lot Coverage: 60%.
-1. Front Yard Setback:
-   1. Minimum front yard setback shall be fifteen (15) feet from the front property line.
-   1. Where a property fronts a state or federal highway, any additional access, setback, or sight-distance requirements imposed by the Arkansas Department of Transportation shall apply.
-   {: .lower-alpha}
-1. Rear Yard Setback: Minimum of 15 feet from rear property line.
-1. Side Yard Setback (interior lot): Minimum of 10 feet from each side property line.
-1. Side Yard Setback (exterior lot): Minimum of 15 feet from street-side property line.
-1. Height: Maximum height of a structure shall be two stories and not to exceed 30 feet.
-1. On-lot Parking Spaces:
-   1. On-lot parking facilities shall be provided for all employees.
-   1. Provisions shall be made for on-lot customer parking reasonably sufficient to accommodate the intended use, as determined through building permit review by the Enforcement Officer.
-   1. Motels, tourist courts, mobile home parks shall provide one on-lot parking space for each sleeping unit or mobile home space.
-   {: .lower-alpha}
-1. Loading and Unloading:
-   1. Loading and unloading facilities shall be provided so as not to block any public way.
-   {: .lower-alpha}
-
-*Source: [Ordinance 597, § 2](/ordinances/597).*
-
-*Source verification pending: The signed scan of Ordinance 597 omits these replacement standards. The wording above comes from the [unsigned digital copy, page 2](/assets/documents/05-12-26_PC_Attachment_C-2_Area_Requirement_Ordinance.pdf#page=2). A complete executed copy is needed to confirm the adopted wording.*
-
-#### D. Places of Public Assembly:
-
-Requirements same as for R-1 Residential District.
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-5(D)](/ordinances/359).*
+    *Source: [Ordinance 359, incorporated regulations, Article 5-5(D)](/ordinances/359).*
+{: .upper-alpha}
 
 ### Article 5-6 Industrial Zone (I)
 
-#### A. Permitted Uses
+1. Permitted Uses
+    1. The manufacturing, compounding, processing, packaging, or assembling of such products as prohibited in the Central Retail-Commercial Use District, when it is found by the Enforcement Officer that the specific location and the safeguards provided will so reduce the noise, dust, odor, or vibration so as not to be detrimental or dangerous to the health, safety, or general welfare of the people.
+    1. Storage of bulk materials as is prohibited in the Central Retail-Commercial Use District, when it is found by the Enforcement Officer that the specific location and the safeguards provided will so reduce the danger of fire or explosion as not to be dangerous to the health, safety or general welfare of the people.
+1. Uses Prohibited
+    1. No structure may be constructed or altered for residential use or places of public assembly.
+1. Area Requirements
+    1. Lot Coverage: No structure may cover more than 33 1/3 percent of the lot area.
+    1. Yard Requirements:
+       1. All structures shall be built at least 25 feet from all property lines.
+       1. The Board of Adjustment may waive the height requirements when it is demonstrated that the equipment and the structure to house the operation require greater heights.
+1. {: value="6"} On-Lot Parking:
 
-1. The manufacturing, compounding, processing, packaging, or assembling of such products as prohibited in the Central Retail-Commercial Use District, when it is found by the Enforcement Officer that the specific location and the safeguards provided will so reduce the noise, dust, odor, or vibration so as not to be detrimental or dangerous to the health, safety, or general welfare of the people.
+    Adequate on-lot parking space shall be provided for all employees and visitors.
+1. On-Lot Loading and Unloading Facilities:
 
-1. Storage of bulk materials as is prohibited in the Central Retail-Commercial Use District, when it is found by the Enforcement Officer that the specific location and the safeguards provided will so reduce the danger of fire or explosion as not to be dangerous to the health, safety or general welfare of the people.
+    Each structure or use shall provide on-lot loading and unloading facilities which will not block a street, alley or public way.
+{: .upper-alpha}
 
-*Source: [Ordinance 359, incorporated regulations, Article 5-6(A)](/ordinances/359).*
-
-#### B. Uses Prohibited
-
-1. No structure may be constructed or altered for residential use or places of public assembly.
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-6(B)](/ordinances/359).*
-
-#### C. Area Requirements
-
-1. Lot Coverage: No structure may cover more than 33 1/3 percent of the lot area.
-
-1. Yard Requirements:
-
-   1. All structures shall be built at least 25 feet from all property lines.
-
-   1. The Board of Adjustment may waive the height requirements when it is demonstrated that the equipment and the structure to house the operation require greater heights.
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-6(C)](/ordinances/359).*
-
-#### F. On-Lot Parking:
-
-Adequate on-lot parking space shall be provided for all employees and visitors.
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-6(F)](/ordinances/359).*
-
-#### G. On-Lot Loading and Unloading Facilities:
-
-Each structure or use shall provide on-lot loading and unloading facilities which will not block a street, alley or public way.
-
-*Source: [Ordinance 359, incorporated regulations, Article 5-6(G)](/ordinances/359).*
+*Source for Article 5-6: [Ordinance 359, incorporated regulations, Article 5-6](/ordinances/359).*
 
 ### Article 5-7 — Manufactured and Mobile Home Regulations
 
@@ -693,8 +597,6 @@ Where at the effective date of adoption or amendment of this Ordinance, lawful u
 1. In a residential zone no such non-conforming use of land shall be continued for more than five years from date of adoption of this ordinance or after effective date of annexation.
 {: .upper-alpha}
 
-*Source: [Ordinance 359, incorporated regulations, Article 6-1](/ordinances/359).*
-
 ### Article 6-2 Non-conforming Structure
 
 Where a lawful structure exists at the effective date of adoption or amendment of this ordinance that could not be built under the terms of this ordinance by reasons of restrictions on area, lot coverage, height, yards or other characteristics of the structure or its location on the lot, such structure may be continued so long as it remains otherwise lawful, subject to the following provisions:
@@ -704,8 +606,6 @@ Where a lawful structure exists at the effective date of adoption or amendment o
 1. Such structure, upon the approval of the Board of Zoning Adjustment, may be added to if said addition meets the area requirements of the zone district in which the structure is located, provided said use of this ordinance.
 1. A mobile home can be replaced by the owner on the same exact location by a substitute mobile home provided the second mobile home is 25% in fair market value more than the 1st mobile home replaced. A different location on the lot must be approved by the Planning Commission.
 {: .upper-alpha}
-
-*Source: [Ordinance 359, incorporated regulations, Article 6-2](/ordinances/359).*
 
 ### Article 6-3 Non-conforming Use of Structure
 
@@ -718,7 +618,7 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. When a non-conforming use of a structure, or structure and premises in combination, is discontinued or abandoned for five consecutive years, the structure or structure and premises in combination shall not thereafter be used except in conformance with the regulations of the district in which it is located.
 {: .upper-alpha}
 
-*Source: [Ordinance 359, incorporated regulations, Article 6-3](/ordinances/359).*
+*Source for Section 6: [Ordinance 359, incorporated regulations, Section 6](/ordinances/359).*
 
 ## Section 7 — Enforcement
 
@@ -728,8 +628,6 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. The Enforcement Officer shall serve as the administrative officer responsible for reviewing applications, issuing or denying permits, investigating apparent violations, issuing notices and Stop-Work Orders when authorized by this Section, and performing such other administrative duties as are assigned by this Ordinance or other duly adopted ordinances of the City.
 1. Nothing in this Section shall authorize the Enforcement Officer to grant a variance from the requirements of this Ordinance or to permit a use that is not otherwise authorized by the applicable zoning district.
 {: .upper-alpha}
-
-*Source: [Ordinance 599, § 1](/ordinances/599).*
 
 ### Article 7-2. Building Permit Required
 
@@ -744,8 +642,6 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. A Building Permit required by this Article shall be in addition to any Certificate of Zoning Compliance, Foundation Permit, petition for placement, or other approval specifically required for a manufactured home under Article 5-7.
 1. Issuance of a Building Permit shall not relieve any property owner, applicant, contractor, or other person from complying with any other applicable provision of this Ordinance or other applicable municipal, state, or federal requirement.
 {: .upper-alpha}
-
-*Source: [Ordinance 599, § 1](/ordinances/599).*
 
 ### Article 7-3. Exemptions
 
@@ -766,8 +662,6 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. Exemption from the Building Permit requirement shall not exempt any person, property, building, or structure from compliance with the setbacks, yards, easements, rights-of-way, use restrictions, floodplain requirements, or other applicable provisions of this Ordinance or other applicable law.
 {: .upper-alpha}
 
-*Source: [Ordinance 599, § 1](/ordinances/599).*
-
 ### Article 7-4. Application Requirements
 
 1. Every application for a Building Permit shall be submitted to the Enforcement Officer upon forms approved by the City.
@@ -787,8 +681,6 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. A record of Building Permit applications, supporting site plans or sketches, permits issued or denied, and related written determinations shall be maintained by the City Clerk or within the official records of the City.
 {: .upper-alpha}
 
-*Source: [Ordinance 599, § 1](/ordinances/599).*
-
 ### Article 7-5. Review and Issuance of Building Permits
 
 1. The Enforcement Officer shall review each Building Permit application to determine whether the proposed location, dimensions, use, and general scope of work comply with:
@@ -804,16 +696,12 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. Issuance of a Building Permit shall not constitute a warranty or certification by the City concerning structural integrity, workmanship, property boundaries, or compliance with any technical code for which the City has not performed the applicable inspection or review.
 {: .upper-alpha}
 
-*Source: [Ordinance 599, § 1](/ordinances/599).*
-
 ### Article 7-6. Variances and Noncomplying Applications
 
 1. When a proposed project cannot comply with a dimensional or physical requirement of this Ordinance, including a setback, lot-area, lot-width, height, placement, or similar zoning requirement, an applicant may seek a variance from the Board of Zoning Adjustment in accordance with Section 8 of this Ordinance and Arkansas law.
 1. No Building Permit shall be issued for work requiring such a variance unless and until the Board of Zoning Adjustment grants the necessary variance or other relief authorized by law.
 1. Nothing in this Article shall authorize a variance permitting a use that is prohibited within the applicable zoning district.
 {: .upper-alpha}
-
-*Source: [Ordinance 599, § 1](/ordinances/599).*
 
 ### Article 7-7. Stop-Work Orders
 
@@ -830,8 +718,6 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. It shall be unlawful to knowingly continue work in violation of a Stop-Work Order until authorized by the City.
 {: .upper-alpha}
 
-*Source: [Ordinance 599, § 1](/ordinances/599).*
-
 ### Article 7-8. Permit Expiration and Extension
 
 1. Every Building Permit issued pursuant to this Section shall become invalid unless the work authorized by the permit is commenced in good faith within six (6) months after the date of issuance.
@@ -842,8 +728,6 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. Expiration of a Building Permit does not legalize work performed in violation of this Ordinance and does not prohibit issuance of a new permit for work otherwise eligible for approval.
 {: .upper-alpha}
 
-*Source: [Ordinance 599, § 1](/ordinances/599).*
-
 ### Article 7-9. Appeals
 
 1. Any person aggrieved by a final determination of the Enforcement Officer concerning the enforcement or application of this Zoning Ordinance, including a zoning-based denial of a Building Permit or zoning-based Stop-Work Order, may appeal the determination to the Board of Zoning Adjustment in accordance with Section 8 of this Ordinance.
@@ -852,8 +736,6 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. An appeal concerning the interpretation or enforcement of a construction, electrical, plumbing, fire, floodplain, utility, or other requirement not arising under this Zoning Ordinance shall be made according to the appeal procedure established by the applicable code or ordinance.
 1. Nothing in this Article shall enlarge or diminish the jurisdiction conferred upon the Board of Zoning Adjustment by Arkansas law.
 {: .upper-alpha}
-
-*Source: [Ordinance 599, § 1](/ordinances/599).*
 
 ### Article 7-10. Violations, Notice, and Penalties
 
@@ -877,7 +759,7 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. Failure to obtain a Building Permit, standing alone, shall not require removal of work that is otherwise capable of being approved and brought into compliance with all applicable requirements.
 {: .upper-alpha}
 
-*Source: [Ordinance 599, § 1](/ordinances/599).*
+*Source for Section 7: [Ordinance 599, § 1, replacing Section 7 in full](/ordinances/599).*
 
 ## Section 8 — Board of zoning adjustment
 
@@ -914,7 +796,6 @@ If a lawful use of a structure, or a structure and premises in combination, exis
     in the following instances only:
 
     1. A written application for a variance is submitted demonstrating:
-
         1. The property subject to the variance possesses unique conditions not generally applicable to other properties in the same district, or is subject to physical, topographical, or geologic limitations that restrict its use.
         1. The grant of the variance will not grant any special privilege to the property owner or the owner's authorized agent.
         1. The applicant can demonstrate that without a variance there can be no reasonable use of the property.
@@ -948,8 +829,6 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. The City Council may suggest that the Planning Commission amend the text of this ordinance or the Planning Commission itself may desire to initiate an amendment. Should the Planning Commission, after study, request a change in the text, it shall conduct a public hearing on the proposed amendment. Following the public hearing, such recommendations shall be submitted to the City Council for adoption.
 {: .upper-alpha}
 
-*Source: [Ordinance 359, incorporated regulations, Article 9-1](/ordinances/359).*
-
 ### Article 9-2 Change in Classification
 
 1. A petition giving the legal description of the property involved and the zoning classification requested for the property shall be submitted to the Planning Commission by the property owner or his legally designated agent. The petition shall also include a statement and diagram explaining why the proposed changes will not conflict with surrounding land uses.
@@ -965,7 +844,7 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. Before any action shall be taken as provided in this section, any person or persons proposing a change in the zoning regulations or district boundaries shall deposit with the City Clerk the sum of twenty-five dollars ($25.00) to cover the approximate cost of this procedure, and under no condition shall said sum or any part thereof be refunded for failure of said change to be adopted by the City Council.
 {: .upper-alpha}
 
-*Source: [Ordinance 359, incorporated regulations, Article 9-2](/ordinances/359).*
+*Source for Section 9: [Ordinance 359, incorporated regulations, Section 9](/ordinances/359).*
 
 ## Section 10 — Severability and emergency
 
@@ -974,14 +853,12 @@ If a lawful use of a structure, or a structure and premises in combination, exis
 1. The provisions of this ordinance are hereby declared to be severable. If any section, paragraph, sentence, or clause of this ordinance shall be held invalid, the invalidity of such section, paragraph, sentence, or clause shall not affect the validity of the remainder of the said ordinance.
 {: .upper-alpha}
 
-*Source: [Ordinance 359, incorporated regulations, Article 10-1](/ordinances/359).*
-
 ### Article 10-2 Emergency
 
 1. It being ascertained and found that the passage of this ordinance will promote in accordance with present and future needs, the safety, order, convenience, efficienty and economy in the process of development; convenience in population distribution, good civic design and arrangement; and adequate provisions for public utilities and other public improvements; the passage therefore is found necessary for the preservation of the public peace, health, safety, and general welfare, and an emergency thus existing, this ordinance shall take effect upon its passage and publication.
 {: .upper-alpha}
 
-*Source: [Ordinance 359, incorporated regulations, Article 10-2](/ordinances/359).*
+*Source for Section 10: [Ordinance 359, incorporated regulations, Section 10](/ordinances/359).*
 
 ## Related permit fees and state-law provision
 
