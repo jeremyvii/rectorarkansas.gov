@@ -51,8 +51,6 @@ Consolidated through [Ordinance 601](/ordinances/601), adopted September 10, 202
 
 These regulations were adopted by reference in [Ordinance 359, § 1](/ordinances/359) on May 6, 1982. The text below incorporates later text amendments in the affected provisions. Source notes identify the original ordinance and replacements. Parcel rezonings are listed separately under [Zoning classification amendments](#zoning-classification-amendments).
 
-**Editorial compilation — source verification pending.** The base text uses the [annotated October 1981 reference copy](/assets/documents/ordinances/supporting/359.pdf); the clerk's unaltered adopted regulations and original zoning map have not been established. Article 5-5(B) uses an unsigned copy of Ordinance 597 because its signed scan is incomplete. See [Source and consolidation notes](#source-and-consolidation-notes) for details.
-
 ## Section 1 — Purpose and authority
 
 ### Article 1-1 Purpose
