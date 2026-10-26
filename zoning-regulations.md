@@ -4,28 +4,24 @@ title: Zoning Regulations
 permalink: /zoning-regulations
 
 consolidated_through: "601"
-reviewed_on: "2026-10-21"
+reviewed_on: "2026-10-24"
 
 codification:
   status: needs_review
   base_ordinance: "359"
   text_amendments: ["372", "436", "447", "461", "472", "478", "487", "536", "591", "592", "594", "597", "599", "601"]
   map_amendments: ["441", "458", "462", "469", "480", "522", "531", "544", "546", "561", "562", "587", "596"]
-  method: "Consolidation of repository ordinance transcriptions; no new full visual verification of source PDFs."
+  method: "Consolidation of repository ordinance transcriptions; Ordinance 597 replacement standards additionally checked against page 2 of its complete executed scan on October 24, 2026. Other source PDFs were not newly verified for this compilation."
   verification_needed:
     - section: "Base regulations and zoning map"
       source: /assets/documents/ordinances/supporting/359.pdf
       issue: "The annotated October 1981 reference copy is not established as the unaltered regulations adopted by Ordinance 359. The original adopted map is unavailable."
       action: "Compare the clerk's filed adopted regulations and official map, including subsequent amendments."
-    - section: "Article 5-5(B)"
-      source: /assets/documents/05-12-26_PC_Attachment_C-2_Area_Requirement_Ordinance.pdf
-      page: 2
-      issue: "Replacement standards are supplied by an unsigned digital copy; the signed Ordinance 597 scan omits them."
-      action: "Obtain the complete executed ordinance and confirm the replacement wording."
     - section: "Amendment commencement and completeness"
       issue: "Consolidation reflects imported records; publication, effective dates, and completeness of the ordinance series have not been independently established."
       action: "Confirm the amendment register, publication and commencement records with the city clerk."
   notes:
+    - "Article 5-5(B) was compared with page 2 of the complete executed Ordinance 597 on October 24, 2026; its replacement wording is confirmed without changes."
     - "Ordinance 487 replaces all of Article 5-1(B), including the former parking paragraph; repeated B label preserved."
     - "Ordinance 591 changes only Article 8-2(B) and Article 8-4(A); unaffected paragraphs retained."
     - "Ordinance 594 repeals Article 2-1(C) and all other manufactured/mobile-home references in Article 5-3(B), including 447's foundation provision."
@@ -508,7 +504,6 @@ The purpose of this district is to maintain a residential environment while perm
 
     *Source: [Ordinance 597, § 2](/ordinances/597).*
 
-    *Source verification pending: The signed scan of Ordinance 597 omits these replacement standards. The wording above comes from the [unsigned digital copy, page 2](/assets/documents/05-12-26_PC_Attachment_C-2_Area_Requirement_Ordinance.pdf#page=2). A complete executed copy is needed to confirm the adopted wording.*
 1. {: value="4"} Places of Public Assembly:
 
     Requirements same as for R-1 Residential District.
@@ -906,7 +901,6 @@ These ordinances change parcel classifications or the zoning map incorporated by
 - **Manufactured homes.** Definitions from [372](/ordinances/372) and [436](/ordinances/436) remain as separately cited. [594](/ordinances/594) replaces exterior appearance and placement rules with Article 5-7, removes earlier manufactured-home references in Article 5-2, and repeals the other manufactured/mobile-home references in Article 5-3(B), including [447](/ordinances/447). Its specified placement sentence is included in Article 5-2(B), although 594 describes that article as belonging to 436. Its former Article 7-3 enforcement cross-reference is preserved with an explanatory note.
 - **Residential dimensions.** [592](/ordinances/592) replaces Articles 5-2(C) and 5-3(C), including the earlier setback and carport amendments in [472](/ordinances/472) and [478](/ordinances/478).
 - **Commercial dwellings.** [536](/ordinances/536) replaces Article 5-4(A)(7) added by [461](/ordinances/461). The source's missing adoption year is supplied in its archive metadata from the ordinance spreadsheet.
-- **C-2 standards.** Article 5-5(B) follows [597, § 2](/ordinances/597), using [unsigned digital PDF page 2](/assets/documents/05-12-26_PC_Attachment_C-2_Area_Requirement_Ordinance.pdf#page=2). The executed scan lacks those provisions; their adopted wording remains unverified.
 - **Enforcement and fees.** [599](/ordinances/599) replaces Section 7 in full, including the former manufactured-home enforcement additions in 372. Its separate fee schedule is reproduced above. It expressly repeals Ordinances 328 and 573.
 - **Board of Zoning Adjustment.** [591](/ordinances/591) replaces Article 8-1, Article 8-2(B), Article 8-4(A), and Article 8-5(A). Article 8-2(A) and Article 8-4(B)–(C) remain from 359. The source wording “shall be the city council” in Article 8-5 is preserved.
 - **Principal buildings.** [601](/ordinances/601) adds two definitions and replaces Article 4-4. Its separate consistency-with-state-law provision is reproduced above.
