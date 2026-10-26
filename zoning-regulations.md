@@ -4,7 +4,7 @@ title: Zoning Regulations
 permalink: /zoning-regulations
 
 consolidated_through: "601"
-reviewed_on: "2026-10-24"
+reviewed_on: "2026-10-26"
 
 codification:
   status: needs_review
@@ -15,12 +15,18 @@ codification:
   verification_needed:
     - section: "Base regulations and zoning map"
       source: /assets/documents/ordinances/supporting/359.pdf
-      issue: "The annotated October 1981 reference copy is not established as the unaltered regulations adopted by Ordinance 359. The original adopted map is unavailable."
+      issue: "The annotated October 1981 reference copy is not established as the unaltered regulations adopted by Ordinance 359. A supplied original map scan is now archived; its adoption and subsequent map amendments remain to be verified."
       action: "Compare the clerk's filed adopted regulations and official map, including subsequent amendments."
+    - section: "Original zoning map"
+      source: /assets/documents/ordinances/supporting/359-zoning-map.pdf
+      page: 1
+      issue: "The supplied original map scan has apparently blank adoption date and mayor/clerk signature lines. Some small labels are not consistently readable, and subsequent map amendments have not been reconciled."
+      action: "Confirm adoption against the clerk's records, obtain a clearer original where needed, and compare the amendment register before establishing parcel classifications."
     - section: "Amendment commencement and completeness"
       issue: "Consolidation reflects imported records; publication, effective dates, and completeness of the ordinance series have not been independently established."
       action: "Confirm the amendment register, publication and commencement records with the city clerk."
   notes:
+    - "The one-page original zoning map scan was visually inspected and archived with Ordinance 359 on October 26, 2026; it is linked separately from the later 2008 map. No mapped parcel boundaries were consolidated from this scan."
     - "Article 5-5(B) was compared with page 2 of the complete executed Ordinance 597 on October 24, 2026; its replacement wording is confirmed without changes."
     - "Ordinance 487 replaces all of Article 5-1(B), including the former parking paragraph; repeated B label preserved."
     - "Ordinance 591 changes only Article 8-2(B) and Article 8-4(A); unaffected paragraphs retained."
@@ -172,6 +178,8 @@ The following districts are hereby established:
 ### Article 3-2 Zoning Map Established
 
 Such land and the district classification thereof shall be on the map designated as the "Zoning District Map" of the City of Rector, Arkansas, dated and signed by the Mayor.
+
+*Map source: [Original zoning map scan, PDF page 1](/assets/documents/ordinances/supporting/359-zoning-map.pdf). The adoption date and signature lines appear blank; adoption and subsequent map amendments remain to be verified.*
 
 ### Article 3-3 Boundary Interpretation
 
@@ -904,5 +912,5 @@ These ordinances change parcel classifications or the zoning map incorporated by
 - **Enforcement and fees.** [599](/ordinances/599) replaces Section 7 in full, including the former manufactured-home enforcement additions in 372. Its separate fee schedule is reproduced above. It expressly repeals Ordinances 328 and 573.
 - **Board of Zoning Adjustment.** [591](/ordinances/591) replaces Article 8-1, Article 8-2(B), Article 8-4(A), and Article 8-5(A). Article 8-2(A) and Article 8-4(B)–(C) remain from 359. The source wording “shall be the city council” in Article 8-5 is preserved.
 - **Principal buildings.** [601](/ordinances/601) adds two definitions and replaces Article 4-4. Its separate consistency-with-state-law provision is reproduced above.
-- **Map history.** The original adopted map is unavailable. The reference records flag parcel overlap questions involving [469](/ordinances/469) and [480](/ordinances/480), and parent-attribution questions involving [522](/ordinances/522) and [531](/ordinances/531). Consult the filed map and full descriptions before resolving overlapping changes. [587](/ordinances/587) is included because its operative provisions direct a rezoning and map amendment, even though it is absent from 359's archived amendment list.
+- **Map history.** The [supplied original map scan](/assets/documents/ordinances/supporting/359-zoning-map.pdf) is now archived. Its adoption date and signature lines appear blank; adoption and subsequent map amendments remain to be verified. The reference records flag parcel overlap questions involving [469](/ordinances/469) and [480](/ordinances/480), and parent-attribution questions involving [522](/ordinances/522) and [531](/ordinances/531). Consult the filed map and full descriptions before resolving overlapping changes. [587](/ordinances/587) is included because its operative provisions direct a rezoning and map amendment, even though it is absent from 359's archived amendment list.
 - **Scope and verification.** This compilation uses existing transcriptions; it does not independently establish publication, commencement, completeness of the amendment series, or current legal status. Other land-use ordinances, including [subdivision regulations (338)](/ordinances/338), [flood damage prevention (559)](/ordinances/559), and [recreational vehicle rules (574)](/ordinances/574), remain separate. The archived ordinances preserve their recitals, adoption clauses, signatures, and source-verification records.
