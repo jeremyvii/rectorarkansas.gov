@@ -52,6 +52,11 @@ destination, run `node scripts/index-ordinances.mjs path/to/site` after building
 
 ## Ordinance editorial conventions
 
+The repository-maintained [transcribe-ordinance skill](.agents/skills/transcribe-ordinance/SKILL.md)
+documents the PDF import, transcription, and verification workflow. Contributors
+can use it in Codex or adapt it for similar projects. Per-ordinance metadata
+records completed checks and unresolved review items.
+
 Website transcriptions use sentence case for text printed in all capitals in the
 source, including headings, recitals, and approval statements. Preserve proper
 names, acronyms, defined terms, zoning codes, and section or subsection labels.
