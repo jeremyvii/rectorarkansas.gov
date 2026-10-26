@@ -1,0 +1,121 @@
+---
+layout: default
+breadcrumbs:
+  - title: Ordinances
+    url: /ordinances/
+---
+<div class="usa-section grid-container">
+  <div class="usa-in-page-nav-container">
+    <aside
+      class="usa-in-page-nav"
+      data-heading-elements="h2"
+      data-title-text="On this page"
+      data-title-heading-level="h2"
+      data-scroll-offset="0"
+      data-root-margin="0px 0px 0px 0px"
+      data-threshold="1"
+    ></aside>
+    <article class="main-content">
+      {% include breadcrumbs.html breadcrumbs=layout.breadcrumbs %}
+      <div class="usa-prose">
+        <h1>{{ page.title }}</h1>
+      </div>
+      <section class="usa-summary-box margin-bottom-4" aria-labelledby="ordinance-details">
+        <div class="usa-summary-box__body">
+          <h2 class="usa-summary-box__heading" id="ordinance-details">
+            Ordinance details
+          </h2>
+
+          <dl class="grid-row grid-gap margin-0">
+            {% if page.adopted_date %}
+              <div class="tablet:grid-col-6 margin-bottom-2">
+                <dt class="text-bold">Adopted</dt>
+                <dd class="margin-left-0">
+                  <time datetime="{{ page.adopted_date }}">{{ page.adopted_date | date: "%B %d, %Y" }}</time>
+                </dd>
+              </div>
+            {% endif %}
+
+            {% if page.amends %}
+              <div class="tablet:grid-col-6 margin-bottom-2">
+                <dt class="text-bold">Amends</dt>
+                <dd class="margin-left-0">
+                  {% include ordinance-references.html references=page.amends %}
+                </dd>
+              </div>
+            {% endif %}
+
+            {% if page.amended_by %}
+              <div class="tablet:grid-col-6 margin-bottom-2">
+                <dt class="text-bold">Amended by</dt>
+                <dd class="margin-left-0">
+                  {% include ordinance-references.html references=page.amended_by %}
+                </dd>
+              </div>
+            {% endif %}
+
+            {% if page.repeals %}
+              <div class="tablet:grid-col-6 margin-bottom-2">
+                <dt class="text-bold">Repeals</dt>
+                <dd class="margin-left-0">
+                  {% include ordinance-references.html references=page.repeals %}
+                </dd>
+              </div>
+            {% endif %}
+
+            {% if page.officials and page.officials.mayor %}
+              <div class="tablet:grid-col-6 margin-bottom-2">
+                <dt class="text-bold">Mayor</dt>
+                <dd class="margin-left-0">{{ page.officials.mayor }}</dd>
+              </div>
+            {% endif %}
+
+            {% if page.officials and page.officials.city_clerk %}
+              <div class="tablet:grid-col-6 margin-bottom-2">
+                <dt class="text-bold">City Clerk</dt>
+                <dd class="margin-left-0">{{ page.officials.city_clerk }}</dd>
+              </div>
+            {% endif %}
+          </dl>
+        </div>
+      </section>
+      <div class="usa-alert usa-alert--info usa-alert--slim margin-bottom-4">
+        <div class="usa-alert__body">
+          <h2 class="usa-alert__heading">About this page</h2>
+          <p class="usa-alert__text">
+            This page is an accessible transcription of the ordinance.
+            <a href="{{ page.source.file }}" target="_blank" rel="noopener noreferrer">
+              View the signed ordinance PDF
+            </a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="usa-alert usa-alert--warning usa-alert--slim margin-bottom-4">
+        <div class="usa-alert__body">
+          <h2 class="usa-alert__heading">Notice</h2>
+          <p class="usa-alert__text">
+            This searchable transcription is provided for convenience and may 
+            contain errors. Amendment history
+            may be incomplete. Consult the original document and contact the 
+            City Clerk to verify the ordinance's current legal effect.
+          </p>
+        </div>
+      </div>
+
+      <ul class="usa-list usa-list--unstyled display-flex flex-wrap margin-bottom-4">
+        {% for category in page.categories %}
+          <li class="margin-right-1 margin-bottom-1">
+            <span class="usa-tag">{{ category }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <div class="usa-prose">
+        <h2>{{ page.short_title }}</h2>
+
+        {{ content }}
+      </div>
+    </article>
+  </div>
+</div>

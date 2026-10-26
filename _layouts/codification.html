@@ -1,0 +1,26 @@
+---
+layout: default
+noindex: true
+---
+<style>
+  .zoning-regulations ol { list-style-type: decimal; }
+  .zoning-regulations ol.upper-alpha { list-style-type: upper-alpha; }
+  .zoning-regulations ol.lower-alpha,
+  .zoning-regulations ol.upper-alpha > li > ol > li > ol { list-style-type: lower-alpha; }
+</style>
+<div class="usa-section grid-container">
+  <div class="usa-in-page-nav-container">
+    <aside
+      class="usa-in-page-nav"
+      data-heading-elements="h2"
+      data-title-text="On this page"
+      data-title-heading-level="h2"
+      data-scroll-offset="0"
+      data-root-margin="0px 0px 0px 0px"
+      data-threshold="1"
+    ></aside>
+    <article class="usa-prose zoning-regulations">
+      {{ content }}
+    </article>
+  </div>
+</div>

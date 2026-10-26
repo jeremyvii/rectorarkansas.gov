@@ -1,0 +1,27 @@
+---
+layout: null
+---
+[
+{% for ordinance in site.ordinances %}
+  {% capture searchable_content %}
+    {{ ordinance.title }} {{ ordinance.ordinance_number }} {{ ordinance.short_title }}
+    {{ ordinance.adopted_date }}
+    {{ ordinance.officials.mayor }} {{ ordinance.officials.city_clerk }}
+    {{ ordinance.categories | join: ' ' }}
+    {{ ordinance.content | markdownify | strip_html }}
+  {% endcapture %}
+  {
+    "url": {{ ordinance.url | relative_url | jsonify }},
+    "content": {{ searchable_content | normalize_whitespace | jsonify }},
+    "language": "en",
+    "filters": {
+      "category": {{ ordinance.categories | jsonify }},
+      "adopted_date": [{% if ordinance.adopted_date %}{{ ordinance.adopted_date | date: '%Y-%m-%d' | jsonify }}{% endif %}]
+    },
+    "meta": {
+      "title": {{ ordinance.title | jsonify }},
+      "description": {{ ordinance.short_title | default: '' | jsonify }}
+    }
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

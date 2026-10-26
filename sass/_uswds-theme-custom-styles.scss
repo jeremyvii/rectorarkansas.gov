@@ -122,3 +122,35 @@ figure {
 .usa-identifier {
   font-size: size('body', $theme-type-scale-xs);
 }
+
+summary {
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.usa-alert summary.usa-alert__heading {
+  margin-bottom: 0;
+}
+
+.ordinance-alert .usa-alert__text:last-of-type {
+  @include u-margin-top(1);
+}
+
+// Ordinance markers follow the source document, independently of nesting depth.
+@each $style in decimal, upper-alpha, lower-alpha, lower-roman, none {
+  .usa-prose ol.ordinance-list-#{$style} {
+    list-style-type: $style;
+  }
+}
+
+.ordinance-search-filters .usa-date-picker__external-input {
+  margin-top: 0;
+}
+
+.ordinance-search-filters .usa-date-picker__button {
+  margin-top: 0;
+}

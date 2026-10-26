@@ -1,0 +1,120 @@
+---
+layout: default
+title: Ordinances
+description: Learn about the ordinances in Rector, AR.
+---
+<style>
+  #ordinance-search[hidden],
+  #ordinance-search [hidden],
+  #ordinance-list[hidden] {
+    display: none !important;
+  }
+
+  .usa-collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .usa-collection__item {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: auto;
+  }
+</style>
+<section class="usa-section grid-container">
+  {% include breadcrumbs.html %}
+  <div class="usa-prose">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <div class="usa-alert usa-alert--info ordinance-alert">
+    <div class="usa-alert__body">
+      <h2 class="usa-alert__heading">About this ordinance archive</h2>
+      <p class="usa-alert__text">
+        This archive provides public access to ordinances adopted by the City
+        of Rector, Arkansas. It is intended for research and informational
+        purposes. 
+      </p>
+
+      <p class="usa-alert__text font-serif-xs">
+        Although efforts are made to ensure accuracy and completeness,
+        this archive may contain omissions, transcription errors, or outdated
+        information. Ordinances may have been amended, repealed, superseded, or
+        otherwise affected by subsequent legislation or judicial decisions.
+        The searchable text and amendment history are
+        provided as reference information and have not necessarily been
+        independently verified. This archive is not an officially adopted
+        codification of the City's ordinances.
+        For verification of an ordinance or its current legal effect, contact
+        the Rector City Clerk.
+      </p>
+    </div>
+  </div>
+  <div id="ordinance-search" class="margin-top-3" data-bundle-url="{{ '/pagefind/pagefind.js' | relative_url }}" hidden>
+    <form class="usa-search usa-search--big" role="search">
+      <label class="usa-sr-only" for="ordinance-query">Search ordinances</label>
+      <input class="usa-input" id="ordinance-query" type="search" name="query" placeholder="Search ordinances" aria-describedby="ordinance-search-help">
+      <button class="usa-button" type="submit">
+        <span class="usa-search__submit-text">Search </span
+        ><img
+          src="/assets/uswds/img/usa-icons-bg/search--white.svg"
+          class="usa-search__submit-icon"
+          alt="Search"
+        />
+      </button>
+    </form>
+    <p class="usa-hint" id="ordinance-search-help">
+      Search ordinance numbers, titles, details, and full text. Select 
+      categories or adoption dates to narrow results. Multiple selections match
+      any selected category. Clear the search and filters to browse all ordinances.
+    </p>
+    <details class="margin-top-3 border-1px border-base-lighter padding-2">
+      <summary class="text-bold text-primary">Filter by category or adoption date</summary>
+      <div id="ordinance-search-filters" class="ordinance-search-filters grid-row grid-gap margin-top-3" aria-describedby="ordinance-search-help">
+        <fieldset class="usa-fieldset grid-col-12 margin-bottom-3">
+          <legend class="usa-legend">Adoption date</legend>
+          <p class="usa-hint" id="ordinance-date-help">Both dates are included. Leave either date blank for an open-ended range.</p>
+          <div class="usa-date-range-picker grid-row grid-gap">
+            <div class="usa-form-group margin-top-0 tablet:grid-col-6">
+              <label class="usa-label" for="ordinance-date-from">From</label>
+              <div class="usa-hint margin-bottom-1" id="ordinance-date-from-hint">mm/dd/yyyy</div>
+              <div class="usa-date-picker">
+                <input class="usa-input" id="ordinance-date-from" type="text" name="date_from" aria-describedby="ordinance-date-from-hint ordinance-date-help ordinance-search-status">
+              </div>
+            </div>
+            <div class="usa-form-group margin-top-0 tablet:grid-col-6">
+              <label class="usa-label" for="ordinance-date-through">Through</label>
+              <div class="usa-hint margin-bottom-1" id="ordinance-date-through-hint">mm/dd/yyyy</div>
+              <div class="usa-date-picker">
+                <input class="usa-input" id="ordinance-date-through" type="text" name="date_through" aria-describedby="ordinance-date-through-hint ordinance-date-help ordinance-search-status">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        {% assign categories = site.ordinances | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
+        <fieldset class="usa-fieldset grid-col-12">
+          <legend class="usa-legend">Categories</legend>
+          <div class="grid-row grid-gap">
+            {% for category in categories %}
+              <div class="usa-checkbox tablet:grid-col-6">
+                <input class="usa-checkbox__input" id="ordinance-category-{{ forloop.index }}" type="checkbox" data-filter="category" value="{{ category | escape }}">
+                <label class="usa-checkbox__label" for="ordinance-category-{{ forloop.index }}">{{ category | capitalize | escape }}</label>
+              </div>
+            {% endfor %}
+          </div>
+        </fieldset>
+      </div>
+    </details>
+    <button id="ordinance-search-clear-filters" class="usa-button usa-button--unstyled margin-top-2" type="button" hidden>Clear filters</button>
+    <p id="ordinance-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    <ul id="ordinance-search-results" class="usa-collection" aria-label="Search results" hidden></ul>
+  </div>
+  <noscript><p>Enable JavaScript to search ordinances, or browse the list below.</p></noscript>
+  {% assign ordinances = site.ordinances | sort: 'adopted_date' | reverse %}
+  <ul id="ordinance-list" class="usa-collection">
+    {% for ordinance in ordinances %}
+      {% include ordinance-collection-item.html ordinance=ordinance %}
+    {% endfor %}
+  </ul>
+</section>
+<script type="module" src="{{ '/assets/js/ordinance-search.js' | relative_url }}"></script>
