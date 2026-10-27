@@ -25,14 +25,18 @@ codification:
     - section: "Amendment commencement and completeness"
       issue: "Consolidation reflects imported records; publication, effective dates, and completeness of the ordinance series have not been independently established."
       action: "Confirm the amendment register, publication and commencement records with the city clerk."
+    - section: "Article 5-3(B)(3), mobile home parks"
+      source: /assets/documents/ordinances/594.pdf
+      issue: "Park standards from 359 are retained separately from individual-lot placement rules. Ordinance 594 Section 3 broadly repeals other manufactured/mobile-home references in Article 5-3(B), while Article 5-7(B) permits mobile homes within approved parks; the intended reach of the repeal needs confirmation."
+      action: "Confirm the scope of Section 3 against the city clerk's adopted compilation, council records, or a formal clarification."
   notes:
     - "The one-page original zoning map scan was visually inspected and archived with Ordinance 359 on October 26, 2026; it is linked separately from the later 2008 map. No mapped parcel boundaries were consolidated from this scan."
     - "Article 5-5(B) was compared with page 2 of the complete executed Ordinance 597 on October 24, 2026; its replacement wording is confirmed without changes."
     - "Ordinance 487 replaces all of Article 5-1(B), including the former parking paragraph; repeated B label preserved."
     - "Ordinance 591 changes only Article 8-2(B) and Article 8-4(A); unaffected paragraphs retained."
-    - "Ordinance 594 repeals Article 2-1(C) and all other manufactured/mobile-home references in Article 5-3(B), including 447's foundation provision."
+    - "Ordinance 594 repeals Article 2-1(C). Individual-lot placement provisions in Article 5-3(B), including 447's foundation provision, are replaced by Article 5-7; park standards in Article 5-3(B)(3) are retained pending confirmation of the scope of 594 Section 3."
     - "Ordinance 594's reference to former Article 7-3 is preserved and explained after replacement of Section 7 by 599."
-    - "Ordinance 594 identifies Article 5-2(B) of 436; its prescribed sentence is placed in the base regulations' Article 5-2(B)."
+    - "Ordinance 594 identifies Article 5-2(B) of 436; its prescribed sentence is placed at the end of the base regulations' Article 5-2(B) as editorially numbered item 4. The R-2 sentence remains part of Article 5-3(A)(11)."
     - "Ordinance 536's adoption year relies on the source record's spreadsheet metadata."
     - "Rezoning descriptions are editorial summaries; consult linked ordinances for full legal descriptions."
 ---
@@ -332,8 +336,7 @@ This area is intended primarily for residential neighborhoods characterized by l
     1. Temporary buildings, the use of which are incidental to construction operations, or the sale of lots during development. Said structure shall be removed upon completion or abandonment of such construction, or upon the expiration of a period of two (2) years from the time of erection of said structure, whichever is sooner.
     1. Accessory buildings customarily incidental to the above uses, not involving the conduct of a business. All home occupational use must make application with the Planning Commission.
     1. Railroad rights-of-ways, but not terminal or maintenance facilities.
-
-    Manufactured homes shall be permitted only in accordance with Article 5-7 of these regulations.
+    1. Manufactured homes shall be permitted only in accordance with Article 5-7 of these regulations.
 
     *Source: [Ordinance 594, § 2](/ordinances/594); replacing the manufactured-home placement provisions of [Ordinance 436](/ordinances/436).*
 1. Area Requirements
@@ -393,7 +396,15 @@ The purpose of this district is to maintain a residential environment while perm
 1. Other Uses (with permission of the Planning Commission)
     1. All uses requiring Planning Commission approval in R-1 Districts.
 
-    *Editorial note: All other references to manufactured or mobile homes in Article 5-3(B), including the placement and park conditions in the reference copy and the perimeter-foundation provision added by [Ordinance 447](/ordinances/447), were repealed by [Ordinance 594, § 3](/ordinances/594). See Article 5-7.*
+    1. {: value="3"} Mobile home park which conforms to the following requirements:
+        1. The park shall be located on a well drained site, properly graded to insure rapid drainage and freedom from stagnant pools of water.
+        1. Mobile home spaces shall be provided consisting of a minimum of 1,500 square feet for each space which shall be at least 30 feet wide and clearly defined.
+        1. Mobile homes shall be so harbored on each space that there shall be at least a 15-foot clearance between mobile homes.
+        1. All mobile home spaces shall abut a driveway of not less than 20 feet in width, which shall have unobstructed access to a public street.
+        1. Each mobile home park shall provide service buildings to house such toilet, bathing and other sanitation facilities and such laundry facilities as the City may specify.
+        1. Each mobile home space shall be equipped with connections to all public utilities required by the City for one-family residences.
+
+    *Editorial note: The mobile home park standards in Article 5-3(B)(3) are retained here separately from the individual-lot placement provisions replaced by Article 5-7. Ordinance 594, § 3 broadly repeals “all other references to manufactured or mobile homes in Article 5-3.B”; the scope of that language as applied to park standards requires confirmation. Article 5-7(B) expressly allows mobile homes only within approved mobile home parks.*
 
     *Source: [Ordinance 359, incorporated regulations, Article 5-3(B)](/ordinances/359).*
 1. Area Requirements
@@ -532,10 +543,8 @@ The purpose of this district is to maintain a residential environment while perm
        1. All structures shall be built at least 25 feet from all property lines.
        1. The Board of Adjustment may waive the height requirements when it is demonstrated that the equipment and the structure to house the operation require greater heights.
 1. {: value="6"} On-Lot Parking:
-
     Adequate on-lot parking space shall be provided for all employees and visitors.
 1. On-Lot Loading and Unloading Facilities:
-
     Each structure or use shall provide on-lot loading and unloading facilities which will not block a street, alley or public way.
 {: .upper-alpha}
 
@@ -887,26 +896,101 @@ Nothing in this Ordinance shall be interpreted or administered in a manner incon
 
 These ordinances change parcel classifications or the zoning map incorporated by Article 3-2. They are listed separately from the regulations above. Property descriptions here are summaries; the linked ordinance supplies the full legal description and map direction. This list does not establish a parcel's present classification or replace the official zoning map.
 
-| Ordinance | Adopted | Property summary | Classification change |
-| --- | --- | --- | --- |
-| [441](/ordinances/441) | 1997-02-03 | Gore .48-acre tract | Agricultural → C-2 |
-| [458](/ordinances/458) | 1998-11-02 | Huckabay: Lot 7, south half of Lot 8, and north three-fourths of Lot 9, Block 1, Bolton Addition | R-1 → C-2 |
-| [462](/ordinances/462) | 1999-05-03 | Lots 10 and 11, Block 1, Bolton’s Addition | R-1 → C-2 |
-| [469](/ordinances/469) | 2000-04-03 | Turnbo: Lot 1, Laffler’s Survey, NE¼ NW¼, Section 26 | R-1 → C-2 |
-| [480](/ordinances/480) | 2002-03-04 | Stanford: described NE¼ NW¼, Section 26 tract | R-2 → C-1 |
-| [522](/ordinances/522) | 2007-04-02 | Crockett: all twelve lots, Block 1, McNiel’s Addition | R-1 → C-2 |
-| [531](/ordinances/531) | 2008-07-07 | Lot 5, Laffler’s Survey, NE¼ NW¼, Section 26; amendment to Ordinance 480 | To C-1 |
-| [544](/ordinances/544) | 2010-12-06 | Farren Young: Lots 2, 3, and 6, Block 1, Bolton’s Addition | C-2 → C-1 |
-| [546](/ordinances/546) | 2011-03-07 | Josh Jackson: described portions of Lots 3–6, Block 1, W. Howard’s Addition | R-2 → C-2 |
-| [561](/ordinances/561) | 2017-05-01 | Farren Young: south half of Lots 1 and 2, Block 24, and fractional Block 27, Phillip’s Addition | Industrial → R-2 |
-| [562](/ordinances/562) | 2017-07-10 | Michael and April Lindsay: Lots 1–6 and 12, Block 30, Harbert and Case Addition | Industrial → C-1 |
-| [587](/ordinances/587) | 2025-03-13 | Bryce Koehn: described portions of Lots 1–3 and Lots 4–7, Block 1, French’s / J. L. French Addition | R-1 → C-2 |
-| [596](/ordinances/596) | 2026-01-08 | Andrew Giesbrecht: Lots 1, 2, 9, and 10, Block 2, French Addition | R-1 → C-2 |
+<table class="usa-table usa-table--stacked width-full" aria-labelledby="zoning-classification-amendments">
+  <thead>
+    <tr>
+      <th scope="col">Ordinance</th>
+      <th scope="col">Adopted</th>
+      <th scope="col">Property summary</th>
+      <th scope="col">Classification change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/441">441</a></th>
+      <td data-label="Adopted">1997-02-03</td>
+      <td data-label="Property summary">Gore .48-acre tract</td>
+      <td data-label="Classification change">Agricultural → C-2</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/458">458</a></th>
+      <td data-label="Adopted">1998-11-02</td>
+      <td data-label="Property summary">Huckabay: Lot 7, south half of Lot 8, and north three-fourths of Lot 9, Block 1, Bolton Addition</td>
+      <td data-label="Classification change">R-1 → C-2</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/462">462</a></th>
+      <td data-label="Adopted">1999-05-03</td>
+      <td data-label="Property summary">Lots 10 and 11, Block 1, Bolton’s Addition</td>
+      <td data-label="Classification change">R-1 → C-2</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/469">469</a></th>
+      <td data-label="Adopted">2000-04-03</td>
+      <td data-label="Property summary">Turnbo: Lot 1, Laffler’s Survey, NE¼ NW¼, Section 26</td>
+      <td data-label="Classification change">R-1 → C-2</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/480">480</a></th>
+      <td data-label="Adopted">2002-03-04</td>
+      <td data-label="Property summary">Stanford: described NE¼ NW¼, Section 26 tract</td>
+      <td data-label="Classification change">R-2 → C-1</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/522">522</a></th>
+      <td data-label="Adopted">2007-04-02</td>
+      <td data-label="Property summary">Crockett: all twelve lots, Block 1, McNiel’s Addition</td>
+      <td data-label="Classification change">R-1 → C-2</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/531">531</a></th>
+      <td data-label="Adopted">2008-07-07</td>
+      <td data-label="Property summary">Lot 5, Laffler’s Survey, NE¼ NW¼, Section 26; amendment to Ordinance 480</td>
+      <td data-label="Classification change">To C-1</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/544">544</a></th>
+      <td data-label="Adopted">2010-12-06</td>
+      <td data-label="Property summary">Farren Young: Lots 2, 3, and 6, Block 1, Bolton’s Addition</td>
+      <td data-label="Classification change">C-2 → C-1</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/546">546</a></th>
+      <td data-label="Adopted">2011-03-07</td>
+      <td data-label="Property summary">Josh Jackson: described portions of Lots 3–6, Block 1, W. Howard’s Addition</td>
+      <td data-label="Classification change">R-2 → C-2</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/561">561</a></th>
+      <td data-label="Adopted">2017-05-01</td>
+      <td data-label="Property summary">Farren Young: south half of Lots 1 and 2, Block 24, and fractional Block 27, Phillip’s Addition</td>
+      <td data-label="Classification change">Industrial → R-2</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/562">562</a></th>
+      <td data-label="Adopted">2017-07-10</td>
+      <td data-label="Property summary">Michael and April Lindsay: Lots 1–6 and 12, Block 30, Harbert and Case Addition</td>
+      <td data-label="Classification change">Industrial → C-1</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/587">587</a></th>
+      <td data-label="Adopted">2025-03-13</td>
+      <td data-label="Property summary">Bryce Koehn: described portions of Lots 1–3 and Lots 4–7, Block 1, French’s / J. L. French Addition</td>
+      <td data-label="Classification change">R-1 → C-2</td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Ordinance"><a href="/ordinances/596">596</a></th>
+      <td data-label="Adopted">2026-01-08</td>
+      <td data-label="Property summary">Andrew Giesbrecht: Lots 1, 2, 9, and 10, Block 2, French Addition</td>
+      <td data-label="Classification change">R-1 → C-2</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Source and consolidation notes
 
 - **Base text.** Unamended provisions come from the reference regulations archived with [Ordinance 359](/ordinances/359). The reference copy's cover, drafting preamble, blank 1981 passage block, and handwritten editorial marks are not operative codified provisions. The later residential dimensional replacements remove the annotated setback text. Original wording and numbering gaps elsewhere are preserved, including Article 5-5's missing C and Article 5-6's missing D and E.
-- **Manufactured homes.** Definitions from [372](/ordinances/372) and [436](/ordinances/436) remain as separately cited. [594](/ordinances/594) replaces exterior appearance and placement rules with Article 5-7, removes earlier manufactured-home references in Article 5-2, and repeals the other manufactured/mobile-home references in Article 5-3(B), including [447](/ordinances/447). Its specified placement sentence is included in Article 5-2(B), although 594 describes that article as belonging to 436. Its former Article 7-3 enforcement cross-reference is preserved with an explanatory note.
+- **Manufactured homes.** Definitions from [372](/ordinances/372) and [436](/ordinances/436) remain as separately cited. [594](/ordinances/594) replaces exterior appearance and placement rules with Article 5-7, removes earlier manufactured-home references in Article 5-2, and replaces the individual-lot manufactured/mobile-home placement provisions in Article 5-3(B), including [447](/ordinances/447). The mobile home park standards in Article 5-3(B)(3) are retained, with the scope of 594 § 3 flagged for confirmation. Its specified placement sentence is included as editorially numbered item 4 in Article 5-2(B), although 594 describes that article as belonging to 436. Its former Article 7-3 enforcement cross-reference is preserved with an explanatory note.
 - **Residential dimensions.** [592](/ordinances/592) replaces Articles 5-2(C) and 5-3(C), including the earlier setback and carport amendments in [472](/ordinances/472) and [478](/ordinances/478).
 - **Commercial dwellings.** [536](/ordinances/536) replaces Article 5-4(A)(7) added by [461](/ordinances/461). The source's missing adoption year is supplied in its archive metadata from the ordinance spreadsheet.
 - **Enforcement and fees.** [599](/ordinances/599) replaces Section 7 in full, including the former manufactured-home enforcement additions in 372. Its separate fee schedule is reproduced above. It expressly repeals Ordinances 328 and 573.
