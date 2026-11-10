@@ -1,6 +1,7 @@
 ---
 layout: codification
 title: Zoning Regulations
+description: Browse consolidated Rector, Arkansas zoning regulations, ordinance citations, zoning amendments, and notes identifying provisions that need verification.
 permalink: /zoning-regulations
 
 consolidated_through: "601"
