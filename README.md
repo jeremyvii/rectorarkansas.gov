@@ -50,6 +50,18 @@ After editing ordinances during local development, run `npm run index:ordinances
 once Jekyll has rebuilt the pages to refresh the search index. For a custom Jekyll
 destination, run `node scripts/index-ordinances.mjs path/to/site` after building.
 
+## Search and sharing metadata
+
+The default layout uses page titles and descriptions for canonical and Open Graph
+metadata. Ordinance sharing descriptions fall back to `short_title`. The default
+sharing image is configured with `social_image` and `social_image_alt` in
+`_config.yml`; pages can override both values in front matter.
+
+The build generates `/sitemap.xml` for HTML pages and published collections and
+references it from `/robots.txt`. Pages with `sitemap: false` or `noindex: true`
+are excluded, including pages inheriting `noindex` from a layout. The 404 page
+is excluded. Restart a running Jekyll server after changing configuration or plugins.
+
 ## Ordinance editorial conventions
 
 The repository-maintained [transcribe-ordinance skill](.agents/skills/transcribe-ordinance/SKILL.md)

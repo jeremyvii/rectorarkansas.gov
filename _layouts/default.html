@@ -7,9 +7,20 @@
   {% if page.description %}
     <meta name="description" content="{{ page.description | escape }}">
   {% endif %}
+  {% assign canonical_url = page.url | absolute_url %}
+  {% assign social_image = page.social_image | default: site.social_image %}
+  <link rel="canonical" href="{{ canonical_url | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:title" content="{{ page.title | escape }} - {{ site.title | escape }}">
+  <meta property="og:description" content="{{ page.description | default: page.short_title | default: site.description | escape }}">
+  <meta property="og:url" content="{{ canonical_url | escape }}">
+  <meta property="og:image" content="{{ social_image | absolute_url | escape }}">
+  <meta property="og:image:alt" content="{{ page.social_image_alt | default: site.social_image_alt | escape }}">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/uswds/css/styles.css">
-  {% if layout.noindex %}
+  {% if page.noindex or layout.noindex %}
     <meta name="robots" content="noindex, nofollow">
   {% endif %}
 </head>
@@ -36,7 +47,7 @@
           rel="noopener noreferrer"
         >
           Pay Water Bill
-          {% include icon.html icon="launch" size="margin-left-1" %}</span>
+          {% include icon.html icon="launch" size="margin-left-1" %}
         </a>
         <button type="button" class="usa-menu-btn">Menu</button>
       </div>
